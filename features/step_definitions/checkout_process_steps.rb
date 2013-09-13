@@ -6,10 +6,6 @@ When(/^I attempt to checkout without an? (.+)$/) do |blank_field|
   navigate_to(CheckoutPage).checkout(blank_field => '')
 end
 
-Then(/^I should see the error message "([^"]*)"$/) do |error_message|
-  @current_page.errors.should include error_message
-end
-
 When(/^I navigate to the checkout page$/) do
   navigate_to(CheckoutPage)
 end

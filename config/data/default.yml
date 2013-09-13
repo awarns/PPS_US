@@ -1,3 +1,14 @@
+login_page:
+  consultantID: '102091'
+  password: 'testing31'
+
+profile_page:
+  ship_f_name: 'Andy'
+  ship_l_name: 'Warns'
+  ship_street_1: '205 N. Nelson rd.'
+  zip: '43219'
+
+
 checkout_page:
   name: ~full_name
   address: ~street_address

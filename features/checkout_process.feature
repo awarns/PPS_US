@@ -4,11 +4,18 @@ Feature: Completing the checkout process
   collect some information about the adopter
 
   Background:
-    Given I am on the puppy adoption site
+    Given I am on Her Virtual Office
 
-  Scenario: Name is required when checking out
-    When I attempt to checkout without a name
-    Then I should see the error message "Name can't be blank"
+  Scenario: Login with Valid ID and Password
+    When I Login with Proper Credentials
+
+  Scenario: Login with Invalid ID
+    When I Login with an Invalid ID
+    Then I Should see the Login Page Error Message
+
+  Scenario: Login with Invalid Password
+    When I Login with an Invalid Password
+    Then I Should see the Login Page Error Message
 
   Scenario: Address is required when checking out
     When I attempt to checkout without an address
