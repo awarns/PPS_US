@@ -1,6 +1,26 @@
 Given(/^I am on Her Virtual Office$/) do
 
-  visit LoginPage
+
+  count = 1
+
+  while count == 1
+
+    visit LoginPage
+
+    if @browser.link(:text, "Home").exists? == false
+
+      @browser.close
+      count = 1
+
+    else
+
+      count = 2
+
+    end
+
+
+  end
+
   on(LoginPage).nav_to_virtual_office
 
 end

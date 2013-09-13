@@ -12,6 +12,7 @@ class AddressInfoPage
   text_field(:mail_zip, :id => "MasterContentBody1_shipping_info_2_txtPostalCode")
   link(:save, :id => "MasterContentBody1_btn_update")
   link(:mailing_shipping, :text => "Mailing information same as shipping.")
+  link(:additional_info, :text => "Additional Information")
   div(:error, :id => "MasterContentBody1_ValidationSummary1")
 
   def update_shipping_info(data = {})
@@ -52,6 +53,12 @@ class AddressInfoPage
     self.mail_l_name.should == "Warns"
     self.mail_street_1.should == "205 N. Nelson rd."
     self.mail_zip.should == "43219"
+
+  end
+
+  def click_additional_info
+
+    additional_info
 
   end
 

@@ -8,6 +8,25 @@ profile_page:
   ship_street_1: '205 N. Nelson rd.'
   zip: '43219'
 
+additional_info_page:
+  home_phone: '(419)202-3773'
+  work_phone: '(419)898-1545'
+  email: 'awarns@thirtyonegifts.com'
+
+manage_cc:
+  cc_name: 'Andy Warns'
+  cc_number: '4111111111111111'
+  cc_exp_date: '1215'
+  cc_address: '205 N. Nelson rd.'
+  cc_zip: '43219'
+
+edit_cc:
+  cc_name: 'Edit Card'
+
+change_password_page:
+  old_pass: 'testing31'
+  new_pass: 'testing31'
+  new_pass_confirm: 'testing31'
 
 checkout_page:
   name: ~full_name

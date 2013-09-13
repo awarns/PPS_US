@@ -10,12 +10,6 @@ Then(/^I should see my updated shipping info$/) do
 
 end
 
-When(/^I update my shipping info with a "([^"]*)" value$/) do |value|
-
-  navigate_to(AddressInfoPage, :using => :nav_through_profile).update_shipping_info(:zip => value)
-  sleep(10)
-
-end
 
 Then(/^I should see the error message "([^"]*)"$/) do |error_message|
 

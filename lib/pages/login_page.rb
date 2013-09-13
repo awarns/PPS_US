@@ -10,7 +10,6 @@ class LoginPage
   link(:consultant_login, :text => "Consultant Login")
 
 
-
   def nav_to_virtual_office
 
     consultant_login

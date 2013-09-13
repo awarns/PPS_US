@@ -15,9 +15,10 @@ World(PageObject::PageFactory)
 PageObject::PageFactory.routes = {
     :default => [],
     :nav_through_profile => [
-        [LoginPage, :login],
-        [VirtualOfficeHomePage, :click_profile],
-        [AddressInfoPage, :update_shipping_info]
+      [LoginPage, :login],
+      [VirtualOfficeHomePage, :click_profile],
+      [AddressInfoPage, :click_additional_info],
+      [AdditionalInfoPage, :click_commission_options]
     ],
 }
 
