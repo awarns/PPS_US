@@ -18,7 +18,8 @@ PageObject::PageFactory.routes = {
       [LoginPage, :login],
       [VirtualOfficeHomePage, :click_profile],
       [AddressInfoPage, :click_additional_info],
-      [AdditionalInfoPage, :click_commission_options]
+      [AdditionalInfoPage, :click_commission_options],
+      [CommissionOptionsPage, :click_my_website_info]
     ],
 }
 

@@ -19,6 +19,7 @@ class AdditionalInfoPage
   link(:doc_6, :text => "Self Termination Form")
   link(:update_profile, :id => "MasterContentBody1_btn_update")
   link(:save, :id => "MasterContentBody1_btn_save")
+  link(:commission_options, :text => "Commission Options")
 
   in_frame(:id => "sm-frame") do |frame|
     link(:add_card, :id => "MasterContentBody1_lnk_add", :frame => frame)
@@ -109,6 +110,12 @@ class AdditionalInfoPage
 
     sleep(3)
     self.table_cards.should_not =~ /.*#{name}.*/
+
+  end
+
+  def click_commission_options
+
+    commission_options
 
   end
 
