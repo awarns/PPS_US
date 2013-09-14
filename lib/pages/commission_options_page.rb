@@ -11,6 +11,7 @@ class CommissionOptionsPage
   text_field(:confirm_account_number, :id => "ctl00$MasterContentBody1$DirectDeposit1$txt_us_account_number_confirm")
   select_list(:account_type, :id => "MasterContentBody1_DirectDeposit1_ddl_us_account_type")
   link(:update_profile, :id => "MasterContentBody1_btn_update")
+  link(:my_website_info, :text => "My Website Information")
 
   def enter_check_info(data = {})
 
@@ -40,6 +41,10 @@ class CommissionOptionsPage
 
   end
 
+  def click_my_website_info
 
+    my_website_info
+
+  end
 
 end
