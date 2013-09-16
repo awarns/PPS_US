@@ -22,7 +22,17 @@ PageObject::PageFactory.routes = {
       [CommissionOptionsPage, :click_my_website_info],
       [MyWebsiteInfoPage, :click_upload_photo]
     ],
+    :nav_through_incentives => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_incentives],
+        [IncentivesHomePage, :click_startswell]
+
+    ]
+
+
 }
+
+
 
 PageObject::PageFactory.route_data = {
     :nav_through_profile => :default,

@@ -1,5 +1,6 @@
 class MyWebsiteInfoPage
   include PageObject
+  include FigNewton
   include DataMagic
 
 
@@ -16,7 +17,6 @@ class MyWebsiteInfoPage
     text_area(:meta_description, :id => "MasterContentBody1_txt_meta_desc", :frame => frame)
     text_area(:meta_keywords, :id => "MasterContentBody1_txt_meta_keywords", :frame => frame)
     link(:save_changes, :id => "MasterContentBody1_btnUpdate", :frame => frame)
-
   end
 
   def upload_photo_to_profile
@@ -39,12 +39,6 @@ class MyWebsiteInfoPage
     populate_page_with data_for(:personalize_website, data)
     save_changes
 
-
-  end
-
-  def verify_personalized_website
-
-    puts 'hey'
 
   end
 

@@ -2,7 +2,7 @@ class LoginPage
   include PageObject
   include DataMagic
 
-  page_url FigNewton.baseurl
+  page_url FigNewton.base_url
 
   text_field(:consultantID, :id => "txt_username")
   text_field(:password, :id => "txt_password")

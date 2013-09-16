@@ -18,6 +18,9 @@ end
 
 Then(/^I should see the updates on my personal website$/) do
 
-  on(MyWebsiteInfoPage).verify_personalized_website
+
+  visit ConsultantReplicatedSitePage
+
+  on(ConsultantReplicatedSitePage).verify_personalized_website
 
 end
