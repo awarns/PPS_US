@@ -9,7 +9,7 @@ Given(/^I am on Her Virtual Office$/) do
 
     if @browser.link(:text, "Home").exists? == false
 
-      @browser.close
+      @browser.refresh
       count = 1
 
     else

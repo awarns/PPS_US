@@ -11,3 +11,8 @@ Background:
 
   Scenario: View Gen 0
     When I View My Startswell Gen Zero Info
+    Then I verify my Gen Zero results
+
+  Scenario: Verify Startswell TOT Link
+    When I click the startswell TOT link
+    Then I should be taken to US TOT

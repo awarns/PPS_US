@@ -44,6 +44,16 @@ personalize_website:
   meta_description: 'This is an automated script typing'
   meta_keywords: 'This is so cool'
 
+retail_shipping_info_page:
+  first_name: 'Andy'
+  last_name: 'Warns'
+  address: '205 N. Nelson rd'
+  zip_code: '43219'
+  email: 'awarns@thirtyonegifts.com'
+
+shop_online_page_prod_1:
+   product_search: '3057'
+
 checkout_page:
   name: ~full_name
   address: ~street_address
