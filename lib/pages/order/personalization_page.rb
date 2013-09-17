@@ -62,7 +62,14 @@ class PersonalizationPage
 
   end
 
+  def personalize_with_none
 
+    sleep(5)
+    self.select_pers_option = "None"
+    sleep(2)
+    done_personalizing
+
+  end
 
 
 end

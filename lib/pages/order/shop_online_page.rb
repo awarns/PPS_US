@@ -5,7 +5,7 @@ class ShopOnlinePage
 
   text_field(:product_search, :id => "txtSearch")
   button(:search, :value => "Search")
-  link(:view_cart, :id => "lnk_view_cart")
+  link(:view_cart, :text => "View Cart")
   table(:products_table, :id => "products_table_main")
   link(:product_link) do |page|
     page.products_table_element.link_element(:index => 0)

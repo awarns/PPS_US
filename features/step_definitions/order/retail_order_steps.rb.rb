@@ -27,20 +27,58 @@ end
 
 When(/^I continue my order$/) do
 
-  navigate_all(:using => :continue_unsubmitted_order)
+  navigate_to(YourInvoicePage, :using => :continue_unsubmitted_order)
 
 end
 
 Then(/^I verify Order Totals, Product: "([^"]*)", Tax: "([^"]*)", Shipping : "([^"]*)", Total: "([^"]*)"$/) do |product, tax, shipping, total|
 
-  navigate_all(:using => :retail_quick_checkout)
+  visit YourInvoicePage
+  sleep(3)
   @current_page.text.should include product, tax, shipping, total
 
 end
 
 When(/^I Remove Item "([^"]*)" from my cart$/) do |index|
 
-  on(YourInvoicePage).click_view_cart_on_invoice
+  on(ShopOnlinePage).click_view_cart
   on(ProductsInYourCartPage).remove_product index
+
+end
+
+When(/^I continue my order with items in my cart$/) do
+
+  navigate_all(:using => :continue_unsubmitted_order)
+
+end
+
+When(/^I update an item in my cart$/) do
+
+ on(ShopOnlinePage).click_view_cart
+ on(ProductsInYourCartPage).click_update_prod_in_cart
+
+end
+
+When(/^I personalize using none$/) do
+
+ on(PersonalizationPage).personalize_with_none
+
+end
+
+When(/^I change my shipping information$/) do
+
+ visit YourInvoicePage
+ on(YourInvoicePage).click_change_shipping_info
+ on(ShippingInformationPage).enter_retail_shipping_info(:address => '111 S Figueroa St', :zip_code => '90015')
+
+
+
+end
+
+When(/^I change the personalization of item "([^"]*)"$/) do |index|
+
+
+  on(ShopOnlinePage).click_view_cart
+  on(ProductsInYourCartPage).update_product_personalization index
 
 end

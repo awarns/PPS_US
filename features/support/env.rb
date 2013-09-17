@@ -32,11 +32,8 @@ PageObject::PageFactory.routes = {
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_order],
         [OrderMainPage, :continue_order],
-        [ShippingInformationPage, :click_save_and_continue]
-    ],
-    :retail_quick_checkout => [
-        [ShopOnlinePage, :click_view_cart],
-        [ProductsInYourCartPage, :click_checkout]
+        [ShippingInformationPage, :click_save_and_continue],
+        [YourInvoicePage, :click_back_to_products]
     ],
     :consultant_retail_order => [
         [LoginPage, :login],
@@ -45,6 +42,5 @@ PageObject::PageFactory.routes = {
         [ShippingInformationPage, :enter_retail_shipping_info],
         [ShopOnlinePage, :add_product_to_cart],
         [ProductInformationPage, :add_product_to_cart]
-
     ]
 }
