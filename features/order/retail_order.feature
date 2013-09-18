@@ -53,7 +53,13 @@ Background:
 
   Scenario: Change Personalization
     When I continue my order with items in my cart
-    And I change the personalization of item "3"
+    And I change the personalization of item "2"
+    And I personalize using Embroidery
+    Then I verify Order Totals, Product: "$72.88", Tax: "$7.36", Shipping : "$9.76", Total: "$90.00"
+
+  Scenario: Submit Order
+    When I continue my order with items in my cart
+    And I Submit the Order
 
 
 

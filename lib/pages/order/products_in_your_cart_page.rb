@@ -30,6 +30,17 @@ class ProductsInYourCartPage
 
   end
 
+  def update_product_personalization(index)
+
+    index = index.to_i
+    index = index - 1
+    link_element(:text => "Personalize", :index => index).click
+    sleep(2)
+    link_element(:text => "None").click
+
+  end
+
+
 
 
 

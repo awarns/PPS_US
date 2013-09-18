@@ -42,5 +42,12 @@ PageObject::PageFactory.routes = {
         [ShippingInformationPage, :enter_retail_shipping_info],
         [ShopOnlinePage, :add_product_to_cart],
         [ProductInformationPage, :add_product_to_cart]
+    ],
+    :retail_checkout => [
+        [ShopOnlinePage, :click_view_cart],
+        [ProductsInYourCartPage, :click_checkout],
+        [YourInvoicePage, :pay_for_order],
+        [PaymentPage, :checkout_with_credit_card],
+        [SubmittingOrderPage, :verify_submission]
     ]
 }

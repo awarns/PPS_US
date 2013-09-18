@@ -82,3 +82,11 @@ When(/^I change the personalization of item "([^"]*)"$/) do |index|
   on(ProductsInYourCartPage).update_product_personalization index
 
 end
+
+When(/^I Submit the Order$/) do
+
+
+  navigate_all(:using => :retail_checkout)
+
+
+end

@@ -6,7 +6,7 @@ class YourInvoicePage
   link(:back_to_products, :id => "MasterContentBody1_content_rep_HyperLink1")
   link(:view_cart, :text => "View Cart")
   table(:table_totals, :id => "MasterContentBody1_content_rep_DataGrid1")
-  button(:pay_for_order, :value => "Pay For Order")
+  button(:pay_for_order_button, :value => "Pay For Order")
 
 
   page_url "#{FigNewton.base_url}/forms/frm_temp_invoice.aspx"
@@ -35,6 +35,12 @@ class YourInvoicePage
   def click_change_shipping_info
 
     change_shipping_info
+
+  end
+
+  def pay_for_order
+
+    pay_for_order_button
 
   end
 

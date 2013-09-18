@@ -4,7 +4,7 @@ class ProductInformationPage
 
 
   button(:add_to_cart, :value => "Add To Cart")
-  link(:back_to_products, :id => "lnk_close")
+  link(:back_to_products, :text => /.*Products.*/)
   link(:view_cart, :id => "lnk_view")
   link(:checkout, :id => "lnk_checkout")
 
@@ -19,6 +19,7 @@ class ProductInformationPage
 
   def go_back_to_products
 
+   sleep(5)
    back_to_products
 
   end

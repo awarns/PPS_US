@@ -54,8 +54,8 @@ retail_shipping_info_page:
 shop_online_page_prod_1:
    product_search: '3057'
 
-checkout_page:
-  name: ~full_name
-  address: ~street_address
-  email: ~email_address
-  pay_type: ~randomize ['Purchase order', 'Credit card', 'Check']
+checkout:
+  :card_number: '4111111111111111'
+  :card_exp_date: '1215'
+  :amount: '0.00'
+
