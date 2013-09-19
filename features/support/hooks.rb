@@ -7,5 +7,5 @@ Before do
 end
 
 After do
-  #@browser.close
+  @browser.close
 end

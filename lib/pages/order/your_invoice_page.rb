@@ -40,6 +40,7 @@ class YourInvoicePage
 
   def pay_for_order
 
+    sleep(4)
     pay_for_order_button
 
   end

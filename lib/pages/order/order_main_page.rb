@@ -13,6 +13,8 @@ class OrderMainPage
   link(:returns, :text => "Returns")
   link(:subscriptions, :text => "Subscriptions")
   link(:continue_1, :id => "MasterContentBody1_content_rep_data_unsubmits_lnkContinue_0")
+  link(:cancel, :text => "Cancel")
+  div(:order_main_page, :id => "ctl00_ctl00_MasterContentBody1_content_rep_Views")
 
   def click_business_supply_order
 
@@ -35,6 +37,17 @@ class OrderMainPage
   def continue_order
 
     continue_1
+
+  end
+
+  def cancel_orders
+
+    while order_main_page =~ /.*Cancel.*/
+
+      cancel
+      @browser.alert.ok
+
+    end
 
   end
 

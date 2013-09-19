@@ -90,3 +90,9 @@ When(/^I Submit the Order$/) do
 
 
 end
+
+When(/^I cancel my unsubmitted orders$/) do
+
+  navigate_to(OrderMainPage, :using => :consultant_retail_order).cancel_orders
+
+end

@@ -6,6 +6,8 @@ Feature: Retail Order
 Background:
   Given I am on Her Virtual Office
 
+  Scenario: Cancel Any Unsubmitted Orders
+    When I cancel my unsubmitted orders
 
   Scenario: SetUp Retail Order
     When I setup a retail order
