@@ -49,5 +49,20 @@ PageObject::PageFactory.routes = {
         [YourInvoicePage, :pay_for_order],
         [PaymentPage, :checkout_with_credit_card],
         [SubmittingOrderPage, :verify_submission]
+    ],
+    :consultant_party_order => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_party_order],
+        [HostInformationPage, :enter_host_info]
+    ],
+    :party_order_add_guest => [
+        [OrderDetailsPage, :click_add_guest],
+        [GuestInformationPage, :add_guest]
+    ],
+    :party_order_add_products => [
+        [OrderDetailsPage, :add_item_to_party_order]
     ]
+
 }
+

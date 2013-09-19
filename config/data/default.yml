@@ -54,6 +54,28 @@ retail_shipping_info_page:
 shop_online_page_prod_1:
    product_search: '3057'
 
+host_information:
+  party_date: '6/6/2013'
+  party_f_name: 'Andy'
+  party_l_name: 'Warns'
+  party_address: '205 N. Nelson Rd'
+  party_zip_code: '43219'
+  party_email: 'awarns@thirtyonegifts.com'
+
+add_guest:
+  ship_to_hostess: false
+  guest_f_name: 'Harvey'
+  guest_l_name: 'Specter'
+  guest_address: '4 Pennsylvania Plaza'
+  guest_zip: '10001'
+  guest_email: 'awarns@thirtyonegifts.com'
+
+add_party_item:
+  customer_list: 'Harvey Specter'
+  item_code: '3057'
+  quantity: '1'
+
+
 checkout:
   :card_number: '4111111111111111'
   :card_exp_date: '1215'
