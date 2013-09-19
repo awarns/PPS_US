@@ -1,4 +1,4 @@
-Feature: Retail Order
+Feature: Retail Order as a Consultant
 
   As a consultant
   I want to place a retail order
@@ -62,6 +62,7 @@ Background:
   Scenario: Submit Order
     When I continue my order with items in my cart
     And I Submit the Order
+    Then I should see the Order in my Order History Table
 
 
 

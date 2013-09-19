@@ -32,5 +32,11 @@ class VirtualOfficeHomePage
 
   end
 
+  def click_order_history
+
+    order_hist
+
+  end
+
 
 end

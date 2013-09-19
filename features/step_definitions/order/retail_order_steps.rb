@@ -71,12 +71,9 @@ When(/^I change my shipping information$/) do
  on(YourInvoicePage).click_change_shipping_info
  on(ShippingInformationPage).enter_retail_shipping_info(:address => '111 S Figueroa St', :zip_code => '90015')
 
-
-
 end
 
 When(/^I change the personalization of item "([^"]*)"$/) do |index|
-
 
   on(ShopOnlinePage).click_view_cart
   on(ProductsInYourCartPage).update_product_personalization index
@@ -85,14 +82,17 @@ end
 
 When(/^I Submit the Order$/) do
 
-
   navigate_all(:using => :retail_checkout)
-
 
 end
 
 When(/^I cancel my unsubmitted orders$/) do
 
   navigate_to(OrderMainPage, :using => :consultant_retail_order).cancel_orders
+
+end
+
+Then(/^I should see the Order in my Order History Table$/) do
+
 
 end
