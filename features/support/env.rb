@@ -61,8 +61,13 @@ PageObject::PageFactory.routes = {
         [GuestInformationPage, :add_guest]
     ],
     :party_order_add_products => [
-        [OrderDetailsPage, :add_item_to_party_order]
-    ]
+        [OrderDetailsPage, :add_item_to_party_order],
+        [OrderDetailsPage, :party_personalize_item_with_icon_it],
+        [OrderDetailsPage, :add_item_to_party_order, :item_code => '3893'],
+        [OrderDetailsPage, :party_personalize_item_with_none],
+        [OrderDetailsPage, :add_item_to_party_order, :customer_list => 'Mike Ross'],
+        [OrderDetailsPage, :party_personalize_item_with_icon_it]
+    ],
 
 }
 

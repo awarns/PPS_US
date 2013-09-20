@@ -75,7 +75,6 @@ add_party_item:
   item_code: '3057'
   quantity: '1'
 
-
 checkout:
   :card_number: '4111111111111111'
   :card_exp_date: '1215'
