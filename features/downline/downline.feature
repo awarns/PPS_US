@@ -13,3 +13,13 @@ Background:
     Then I should see my List View downline report
 
   Scenario: Run Downline in Team View
+    When I run my downline report in "Team View"
+    Then I should see my Team View downline report
+
+  Scenario: Setup Downline Filter
+    When I setup a downline filter
+    Then I should see "Automation Filter"
+    
+  Scenario: Delete Filter
+    When I delete a filter
+    Then I should see "You don't currently have any saved filters."

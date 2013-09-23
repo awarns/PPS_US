@@ -78,6 +78,12 @@ add_party_item:
 downline_page:
   downline_type: 'List View'
 
+downline_filer:
+  downline_type: 'List View'
+  ohio: 'true'
+  save_filter_as: 'Automation Filter'
+
+
 checkout:
   :card_number: '4111111111111111'
   :card_exp_date: '1215'

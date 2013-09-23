@@ -1,8 +1,9 @@
 class DownlineResultsReportPage
   include PageObject
 
-
+  select_list(:group_focus, :id => "group_focus")
   table(:downline_results, :id => "DataGrid1")
+  table(:team_downline_results, :id => "MasterContentBody1_DataGrid1")
 
 
   def verify_list_view_results
@@ -25,8 +26,14 @@ class DownlineResultsReportPage
     downline_results.should =~ /.*SDV.*/
     downline_results.should =~ /.*EDV.*/
 
+  end
 
+  def verify_team_view_results
 
+    self.group_focus = "All (Expanded)"
+    sleep(2)
+    name =  team_downline_results_element[25][2].text
+    name.should_not == nil
 
   end
 
