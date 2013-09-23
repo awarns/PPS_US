@@ -38,5 +38,11 @@ class VirtualOfficeHomePage
 
   end
 
+  def click_downline
+
+    downline
+
+  end
+
 
 end

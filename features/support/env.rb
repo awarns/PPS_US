@@ -26,7 +26,7 @@ PageObject::PageFactory.routes = {
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_incentives],
         [IncentivesHomePage, :click_startswell],
-        [StartswellPage, :click_incentives]
+        [StartswellPage, :click_incentives],
     ],
     :continue_unsubmitted_order => [
         [LoginPage, :login],
@@ -75,7 +75,14 @@ PageObject::PageFactory.routes = {
     :party_checkout => [
         [PaymentPage, :click_submit_order],
         [SubmittingOrderPage, :verify_submission]
+    ],
+    :run_downline_report => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_downline],
+        [DownlinePage, :run_downline]
+
     ]
+
 
 }
 
