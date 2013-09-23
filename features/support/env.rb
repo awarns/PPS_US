@@ -68,6 +68,14 @@ PageObject::PageFactory.routes = {
         [OrderDetailsPage, :add_item_to_party_order, :customer_list => 'Mike Ross'],
         [OrderDetailsPage, :party_personalize_item_with_icon_it]
     ],
+    :party_order_nav_to_checkout => [
+        [OrderDetailsPage, :click_payments],
+        [OrderDetailsPage, :click_ok_in_popup]
+    ],
+    :party_checkout => [
+        [PaymentPage, :click_submit_order],
+        [SubmittingOrderPage, :verify_submission]
+    ]
 
 }
 

@@ -58,3 +58,70 @@ When(/^I add a hostess half price item to my order$/) do
   on(OrderDetailsPage).party_personalize_item_with_none
 
 end
+
+When(/^I add 31gives to my guests$/) do
+
+  on(OrderDetailsPage).add_item_to_party_order(:item_code => "31givesr")
+  sleep(3)
+  on(OrderDetailsPage).add_item_to_party_order(:customer_list => "Mike Ross", :item_code => "31givesr")
+
+
+end
+
+When(/^I remove an item from my party order$/) do
+
+  on(OrderDetailsPage).remove_a_product
+
+end
+
+When(/^I add one item to my cart$/) do
+
+  on(OrderDetailsPage).add_item_to_party_order(:item_code => "3893")
+  on(OrderDetailsPage).party_personalize_item_with_none
+
+end
+
+When(/^I change a guests shipping information$/) do
+
+  on(OrderDetailsPage).change_guests_shipping_info
+  on(GuestInformationPage).add_guest
+
+end
+
+When(/^I change a personalization option$/) do
+
+  on(OrderDetailsPage).change_personalization
+
+end
+
+When(/^I add two good payments and one bad payment$/) do
+
+  navigate_all(:using => :party_order_nav_to_checkout)
+  on(PaymentPage).party_checkout_propay(1)
+  on(PaymentPage).party_checkout_propay(2,:card_number => "4404040404040404")
+  on(PaymentPage).party_checkout_propay(3)
+
+
+
+end
+
+When(/^I Submit the Party Order expecting a ProPay Error$/) do
+
+  on(PaymentPage).click_submit_order
+  sleep(10)
+
+
+end
+
+When(/^I fix my bad card$/) do
+
+  navigate_all(:using => :party_order_nav_to_checkout)
+  on(PaymentPage).fix_bad_card
+
+end
+
+When(/^I Submit the Party Order$/) do
+
+  navigate_all(:using => :party_checkout)
+
+end

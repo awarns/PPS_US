@@ -12,6 +12,7 @@ class ShopOnlinePage
   end
 
 
+
   def add_product_to_cart_1(data = {})
 
     populate_page_with data_for(:shop_online_page_prod_1, data)
