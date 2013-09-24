@@ -80,9 +80,11 @@ PageObject::PageFactory.routes = {
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_downline],
         [DownlinePage, :run_downline]
-
+    ],
+    :nav_to_commissions => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_commissions],
+        [CommissionsPage, :click_rebates]
     ]
-
-
 }
 

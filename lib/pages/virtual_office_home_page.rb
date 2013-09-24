@@ -44,5 +44,11 @@ class VirtualOfficeHomePage
 
   end
 
+  def click_commissions
+
+    commissions
+
+  end
+
 
 end
