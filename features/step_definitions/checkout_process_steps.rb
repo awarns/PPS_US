@@ -20,7 +20,4 @@ When(/^I complete the adoption of a puppy$/) do
   navigate_all
 end
 
-Then(/^I should see "([^"]*)"$/) do |message|
-  @current_page.text.should include message
-end
 

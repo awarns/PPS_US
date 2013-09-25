@@ -50,5 +50,17 @@ class VirtualOfficeHomePage
 
   end
 
+  def click_account_balance
+
+    acct_bal
+
+  end
+
+  def click_my_events
+
+    my_events
+
+  end
+
 
 end

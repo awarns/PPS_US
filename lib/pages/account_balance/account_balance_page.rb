@@ -8,8 +8,32 @@ class AccountBalancePage
   button(:go_button, :value => "Go")
   table(:acct_balance_table, :id => "ctl00_MasterContentBody1_data_transactions_ctl00")
 
+  in_frame(:id => "sm-frame") do |frame|
+    table(:popup_text, :class => "table_style", :frame => frame)
+  end
 
 
+  def search_account_balance
+
+    sleep(3)
+    @order = acct_balance_table_element[2][1].text
+
+    self.order_number = @order
+    go_button
+
+    sleep(3)
+    puts @order
+    link_element(:text => "#{@order}").click
+
+
+  end
+
+  def verify_popup
+
+    sleep(6)
+    popup_text.should =~ /.*Order Number.*/
+
+  end
 
 
 end

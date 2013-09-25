@@ -85,6 +85,24 @@ PageObject::PageFactory.routes = {
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_commissions],
         [CommissionsPage, :click_rebates]
-    ]
+    ],
+    :nav_to_account_balance => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_account_balance],
+        [AccountBalancePage, :search_account_balance]
+    ],
+    :create_party_event => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_my_events],
+        [MyEventsHomePage, :click_party_event],
+        [EventDetailsPage, :enter_event_details_party_event],
+    ],
+    :nav_through_event => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_my_events],
+        [MyEventsHomePage, :edit_existing_event],
+        [EventGuestListPage, :nav_to_invitations],
+        [EventInvitationsPage, :nav_to_guest_list],
+    ],
 }
 
