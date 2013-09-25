@@ -21,8 +21,12 @@ class EventGuestListPage
   link(:invitations, :text => "Invitations")
   link(:guest_list, :text => "Guest List")
   link(:update_link, :text => "Update")
+  link(:view_invite_link, :id => "MasterContentBody1_content_rep_data_invitee_list_lnkPreview_0")
   checkbox(:can_attend, :id => "MasterContentBody1_chk_can_attend")
   table(:guest_list_table, :id => "MasterContentBody1_content_rep_data_rsvps")
+  in_frame(:id => "sm-frame") do |frame|
+    image(:rsvp_to_party, :alt => "RSVP to my Party!", :frame => frame)
+  end
 
   def add_guest_to_event(data ={})
 
@@ -66,6 +70,15 @@ class EventGuestListPage
 
     sleep(3)
     guest_list_table_element[1][5].text.should == "Y"
+
+  end
+
+  def preview_invitations
+
+    preview_invites
+    sleep(2)
+    view_invite_link
+    rsvp_to_party_element.click
 
   end
 

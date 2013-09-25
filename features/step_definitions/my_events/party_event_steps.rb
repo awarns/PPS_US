@@ -27,3 +27,10 @@ Then(/^I should see a Yes RSVP$/) do
   on(EventGuestListPage).check_rsvp
 
 end
+
+When(/^I preview an invite$/) do
+
+  navigate_to(EventGuestListPage, :using => :nav_through_event).preview_invitations
+  on(RsvpPage).rsvp_to_party
+
+end

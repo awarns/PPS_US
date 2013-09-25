@@ -23,3 +23,7 @@ Background:
     When I edit a guest invited to a party
     Then I should see a Yes RSVP
 
+  Scenario: Preview Invitations
+    When I preview an invite
+
+
