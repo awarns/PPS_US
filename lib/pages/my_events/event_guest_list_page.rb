@@ -61,6 +61,7 @@ class EventGuestListPage
 
     sleep(4)
     edit_view
+    sleep(2)
     check_can_attend
     update_link
 

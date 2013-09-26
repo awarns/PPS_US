@@ -20,7 +20,19 @@ class EventDetailsPage
     populate_page_with data_for(:party_event, data)
     copy_link
 
-    while page_text =~ /.*First Name.*/
+    while page_text =~ /.*Phone*/
+
+      save_and_continue
+      sleep(2)
+
+    end
+
+  end
+
+  def enter_event_details_non_party_event(data ={})
+    populate_page_with data_for(:non_party_event, data)
+
+    while page_text =~ /.*Phone.*/
 
       save_and_continue
       sleep(2)

@@ -99,6 +99,14 @@ party_event:
   last_name: 'Warns'
   phone: '(419) 202-3773'
 
+non_party_event:
+  description: 'Andy Automation Non Party'
+  event_details: 'Come Spend Money!!'
+  address_line_1: '205 N. Nelson Rd.'
+  zip_code: '43219'
+  email: 'awarns@thirtyonegifts.com'
+  phone: '(419) 202-3773'
+
 event_invitations:
   invitation_subject: 'Come and Party'
   invitation_message: 'Hey Whats Good in the Hood?'
