@@ -62,5 +62,11 @@ class VirtualOfficeHomePage
 
   end
 
+  def click_email
+
+    email
+
+  end
+
 
 end

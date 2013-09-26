@@ -122,3 +122,15 @@ event_guest_info:
   customer_zip_code: '43219'
   customer_email: 'awarns@thirtyonegifts.com'
 
+email_recipient_list:
+  add_search: 'awarns@thirtyonegifts.com'
+  ddl_add_options: 'Contacts: Email'
+
+send_email:
+  copy_yourself: 'true'
+  subject: 'This is An Email from Andy'
+
+customer_service:
+  subject: 'I need help now!!!'
+  message: 'I need some assistance.'
+

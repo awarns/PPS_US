@@ -115,6 +115,11 @@ PageObject::PageFactory.routes = {
         [VirtualOfficeHomePage, :click_my_events],
         [MyEventsHomePage, :click_party_event_hostess],
         [EventDetailsPage, :enter_event_details_party_event]
-    ]
+    ],
+    :nav_to_email => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_email],
+        [EmailPage, :create_an_invitation]
+    ],
 }
 
