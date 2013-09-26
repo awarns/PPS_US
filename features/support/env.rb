@@ -110,5 +110,11 @@ PageObject::PageFactory.routes = {
         [MyEventsHomePage, :click_non_party_event],
         [EventDetailsPage, :enter_event_details_non_party_event]
     ],
+    :create_party_event_with_hostess_options => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_my_events],
+        [MyEventsHomePage, :click_party_event_hostess],
+        [EventDetailsPage, :enter_event_details_party_event]
+    ]
 }
 
