@@ -46,6 +46,7 @@ class EventGuestListPage
 
   def nav_to_invitations
 
+    sleep(3)
     invitations
 
   end
@@ -78,9 +79,19 @@ class EventGuestListPage
     preview_invites
     sleep(2)
     view_invite_link
+    sleep(10)
     rsvp_to_party_element.click
 
+
   end
+
+  def delete_guest
+
+    delete
+    sleep(5)
+
+  end
+
 
 
 

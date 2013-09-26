@@ -1,6 +1,6 @@
 When(/^I Create a Party Event$/) do
 
-  navigate_to(EventInvitationsPage, :using => :create_party_event)
+  navigate_all(:using => :create_party_event)
 
 end
 
@@ -31,6 +31,29 @@ end
 When(/^I preview an invite$/) do
 
   navigate_to(EventGuestListPage, :using => :nav_through_event).preview_invitations
-  on(RsvpPage).rsvp_to_party
+
+end
+
+Then(/^I should see the invite$/) do
+
+
+
+end
+
+When(/^I send an invitation$/) do
+
+  navigate_to(EventGuestListPage, :using => :nav_through_event).send_invites
+
+end
+
+When(/^I delete a guest from an invite$/) do
+
+  navigate_to(EventGuestListPage, :using => :nav_through_event).delete_guest
+
+end
+
+When(/^I cancel my open events$/) do
+
+  navigate_to(MyEventsHomePage, :using => :nav_through_event).cancel_existing_events
 
 end

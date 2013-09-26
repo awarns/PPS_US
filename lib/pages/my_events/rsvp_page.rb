@@ -10,6 +10,7 @@ class RsvpPage
 
   def rsvp_to_party
 
+
     select_no_shop_online
     send_response
 

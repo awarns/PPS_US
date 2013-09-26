@@ -8,6 +8,9 @@ class MyEventsHomePage
   link(:add_follow_up, :text => "+ Add Follow-Up")
   link(:mange_follow_up_list, :text => "Manage My Follow-Up List")
   link(:edit_event, :text => "Edit")
+  link(:cancel_event, :text => "Cancel")
+  div(:table_events, :class => "full content")
+
 
 
   def click_non_party_event
@@ -31,6 +34,19 @@ class MyEventsHomePage
   def edit_existing_event
 
     edit_event
+
+  end
+
+  def cancel_existing_events
+
+    while table_events =~ /.*Cancel.*/
+
+      cancel_event
+      @browser.alert.ok
+      sleep(3)
+
+    end
+
 
   end
 

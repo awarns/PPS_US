@@ -25,5 +25,21 @@ Background:
 
   Scenario: Preview Invitations
     When I preview an invite
+    Then I should see the invite
+
+  Scenario: Send Invitations
+    When I send an invitation
+    Then I should see "Emails are scheduled to be sent to the following guests:"
+
+  Scenario: Delete Guest from invite
+    When I delete a guest from an invite
+    Then I should see "No guests have been invited to this event."
+
+  Scenario: Cancel Event
+    When I cancel my open events
+    Then I should see "You have not created any events."
+
+
+
 
 
