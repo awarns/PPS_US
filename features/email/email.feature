@@ -24,8 +24,8 @@ Background:
     Then I should see "Choose Source"
     
   Scenario: View Contact Us
-    When I use contact us
-    Then I should see "Thank You. An email has been sent to customer service."
+#    When I use contact us
+#    Then I should see "Thank You. An email has been sent to customer service."
     
 
 
