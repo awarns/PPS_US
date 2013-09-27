@@ -27,7 +27,6 @@ class PaymentPage
     @balance = @browser.table(:class, "normal").text
     arr = @balance.split /[\$_]/
     @balance = arr[3]
-    puts @balance
 
     cc_payment
     self.card_number = data['card_number']

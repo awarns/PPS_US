@@ -51,5 +51,11 @@ class OrderMainPage
 
   end
 
+  def click_contacts
+
+    contacts
+
+  end
+
 
 end

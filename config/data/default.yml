@@ -134,3 +134,14 @@ customer_service:
   subject: 'I need help now!!!'
   message: 'I need some assistance.'
 
+contacts_page:
+  cust_f_name: 'Louis'
+  cust_l_name: 'Litt'
+  cust_address: '205 N. Nelson rd.'
+  cust_zip: '43219'
+  cust_email: 'awarns@thirtyonegifts.com'
+
+search_contact:
+  search: 'Litt'
+  search_in: 'Last Name'
+  from: 'All'

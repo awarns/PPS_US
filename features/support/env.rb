@@ -121,5 +121,10 @@ PageObject::PageFactory.routes = {
         [VirtualOfficeHomePage, :click_email],
         [EmailPage, :create_an_invitation]
     ],
+    :nav_to_contacts => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_contacts],
+    ],
 }
 
