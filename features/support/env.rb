@@ -119,12 +119,18 @@ PageObject::PageFactory.routes = {
     :nav_to_email => [
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_email],
-        [EmailPage, :create_an_invitation]
+        [EmailPage, :create_an_invitation],
     ],
     :nav_to_contacts => [
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_order],
         [OrderMainPage, :click_contacts],
+    ],
+    :nav_to_follow_ups => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_follow_ups],
+        [MyFollowUpsPage, :click_add_a_follow_up]
     ],
 }
 

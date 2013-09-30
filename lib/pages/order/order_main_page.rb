@@ -9,7 +9,7 @@ class OrderMainPage
   link(:bookings, :text => "Bookings")
   link(:contacts, :text => "Contacts")
   link(:gift_cert, :text => "Gift Certificates")
-  link(:follow_ups, :text => "Follow Ups")
+  link(:follow_ups, :text => "Follow-Ups")
   link(:returns, :text => "Returns")
   link(:subscriptions, :text => "Subscriptions")
   link(:continue_1, :id => "MasterContentBody1_content_rep_data_unsubmits_lnkContinue_0")
@@ -54,6 +54,12 @@ class OrderMainPage
   def click_contacts
 
     contacts
+
+  end
+
+  def click_follow_ups
+
+    follow_ups
 
   end
 

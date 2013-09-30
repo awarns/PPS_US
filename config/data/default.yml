@@ -145,3 +145,13 @@ search_contact:
   search: 'Litt'
   search_in: 'Last Name'
   from: 'All'
+
+follow_up_page:
+  option_1: 'true'
+  option_2: 'true'
+  option_3: 'true'
+  f_name: 'Jessica'
+  l_name: 'Pearson'
+  address_line_1: '205 N. Nelson rd'
+  zip_code: '43219'
+
