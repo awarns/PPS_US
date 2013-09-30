@@ -39,3 +39,10 @@ When(/^I import a contact$/) do
   on(MyContactsPage).import_contacts
 
 end
+
+When(/^I merge two contacts$/) do
+
+  navigate_all(:using => :nav_to_contacts)
+  on(MyContactsPage).merge_existing_contacts
+
+end
