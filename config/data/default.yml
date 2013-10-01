@@ -158,3 +158,21 @@ follow_up_page:
 gift_cert_status:
   status: 'Not Redeemed'
 
+fac_email:
+  my_email_address: 'awarns@thirtyonegifts.com'
+
+fac_her_name:
+  consultant_f_name: 'Kelley'
+  consultant_l_name: 'Fullen'
+  consultant_state: 'Ohio'
+
+fac_need_cns:
+  search_f_name: 'Andy'
+  search_l_name: 'Warns'
+  search_address: '205 N. Nelson Rd.'
+  search_zip_code: '43219'
+  search_email: 'awarns@thirtyonegifts.com'
+  option_1: 'true'
+  option_2: 'true'
+  option_3: 'true'
+
