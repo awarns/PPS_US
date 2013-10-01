@@ -6,10 +6,8 @@ When(/^I add an item to a business supply order$/) do
 
 end
 
-When(/^Business Supply Checkout$/) do
+When(/^I Business Supply Checkout$/) do
 
-  on(OrderDetailsPage).click_payments
-  on(PaymentPage).checkout_with_credit_card
-  on(SubmittingOrderPage).verify_submission
+  navigate_all(:using => :business_supply_checkout)
 
 end

@@ -70,5 +70,11 @@ class OrderMainPage
 
   end
 
+  def click_gift_cert
+
+    gift_cert
+
+  end
+
 
 end

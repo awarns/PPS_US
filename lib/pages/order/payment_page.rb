@@ -6,7 +6,9 @@ class PaymentPage
   DEFAULT_DATA = {
       'card_number' => '4111111111111111',
       'card_exp_date' => '1215',
-      'amount' => '0.00'
+      'amount' => '0.00',
+      'gc_amount' => '25.00',
+
 
   }
 
@@ -16,9 +18,12 @@ class PaymentPage
   text_field(:card_number, :id => "MasterContentBody1_content_rep_txt_cno")
   text_field(:card_exp_date, :id => "MasterContentBody1_content_rep_txt_cdate")
   text_field(:amount, :id => "MasterContentBody1_content_rep_txt_camount")
+  text_field(:gc_num, :id => "MasterContentBody1_content_rep_txt_gcno")
+  text_field(:gc_amount, :id => "MasterContentBody1_content_rep_txt_gcamt")
   select_list(:customer_list, :id => "MasterContentBody1_content_rep_dd_ccCust")
   button(:save_payment, :value => "Save Payment")
   button(:submit_order, :value => "Submit Order to Home Office")
+
 
 
   def checkout_with_credit_card(data = {})
@@ -37,6 +42,13 @@ class PaymentPage
     save_payment
     sleep(2)
     submit_order
+
+  end
+
+  def checkout_with_gift_cert
+
+   puts @gift_cert_number
+
 
   end
 

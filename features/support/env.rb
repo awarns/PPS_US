@@ -84,6 +84,11 @@ PageObject::PageFactory.routes = {
         [PaymentPage, :click_submit_order],
         [SubmittingOrderPage, :verify_submission]
     ],
+    :business_supply_checkout => [
+        [OrderDetailsPage, :click_payments],
+        [PaymentPage, :checkout_with_credit_card],
+        [SubmittingOrderPage, :verify_submission],
+    ],
     :place_business_expression_order => [
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_order],
@@ -144,6 +149,22 @@ PageObject::PageFactory.routes = {
         [VirtualOfficeHomePage, :click_order],
         [OrderMainPage, :click_follow_ups],
         [MyFollowUpsPage, :click_add_a_follow_up]
+    ],
+    :redeem_gift_cert => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_gift_cert],
+        [ManageGiftCertificatesPage, :get_cert_number],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_retail_order],
+        [ShippingInformationPage, :enter_retail_shipping_info],
+        [ShopOnlinePage, :add_product_to_cart_1],
+        [ProductInformationPage, :add_product_to_cart],
+        [PersonalizationPage, :personalize_with_none],
+        [ShopOnlinePage, :click_view_cart],
+        [ProductsInYourCartPage, :click_checkout],
+        [YourInvoicePage, :pay_for_order],
+        [PaymentPage, :checkout_with_gift_cert],
     ],
 }
 

@@ -155,3 +155,6 @@ follow_up_page:
   address_line_1: '205 N. Nelson rd'
   zip_code: '43219'
 
+gift_cert_status:
+  status: 'Not Redeemed'
+

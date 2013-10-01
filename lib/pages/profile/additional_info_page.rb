@@ -11,7 +11,7 @@ class AdditionalInfoPage
   link(:manage_cards, :text => "Manage Cards")
   link(:manage_alerts, :text => "Manage Alerts")
   link(:change_my_password, :text => "Change My Password")
-  link(:doc_1, :text => "Consultant Agreement to Terms and Conditions")
+  link(:doc_1, :text => "Consultant Agreement-Terms &Conditions")
   link(:doc_2, :text => "Consent to Electronic Record")
   link(:doc_3, :text => "Consultant Guidebook - New 2013")
   link(:doc_4, :text => "Consultant Guidebook - 2012")

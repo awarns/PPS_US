@@ -12,4 +12,5 @@ Background:
 
   Scenario: Place Order
     When I continue my order
-    And Business Supply Checkout
+    And I Business Supply Checkout
+
