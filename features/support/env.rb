@@ -84,6 +84,11 @@ PageObject::PageFactory.routes = {
         [PaymentPage, :click_submit_order],
         [SubmittingOrderPage, :verify_submission]
     ],
+    :place_business_expression_order => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_business_expression_order],
+    ],
     :run_downline_report => [
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_downline],

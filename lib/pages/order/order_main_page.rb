@@ -5,6 +5,7 @@ class OrderMainPage
   link(:business_supply_order, :text => /.*Business Supply Order.*/)
   link(:party_order, :text => "Party Order ($200 min)")
   link(:retail_order, :text => "Retail Customer Order")
+  link(:business_expression, :text => "Business Expression")
   link(:backorders, :text => "Backorders")
   link(:bookings, :text => "Bookings")
   link(:contacts, :text => "Contacts")
@@ -31,6 +32,12 @@ class OrderMainPage
   def click_retail_order
 
     retail_order
+
+  end
+
+  def click_business_expression_order
+
+    business_expression
 
   end
 
