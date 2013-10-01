@@ -2,7 +2,7 @@ class OrderMainPage
   include PageObject
   include DataMagic
 
-  link(:business_supply_order, :text => "Business Suppl Order")
+  link(:business_supply_order, :text => /.*Business Supply Order.*/)
   link(:party_order, :text => "Party Order ($200 min)")
   link(:retail_order, :text => "Retail Customer Order")
   link(:backorders, :text => "Backorders")

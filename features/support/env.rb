@@ -35,6 +35,14 @@ PageObject::PageFactory.routes = {
         [ShippingInformationPage, :click_save_and_continue],
         [YourInvoicePage, :click_back_to_products]
     ],
+    :consultant_business_supply_order => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_business_supply_order],
+        [ShippingInformationPage, :click_save_and_continue],
+        [OrderDetailsPage, :add_item_to_business_supply_order],
+        [OrderDetailsPage, :party_personalize_item_with_none],
+    ],
     :consultant_retail_order => [
         [LoginPage, :login],
         [VirtualOfficeHomePage, :click_order],

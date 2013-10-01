@@ -52,6 +52,14 @@ class OrderDetailsPage
 
   end
 
+  def add_item_to_business_supply_order
+
+    self.item_code = "3057"
+    self.quantity = "1"
+    add_lookup
+
+  end
+
   def party_personalize_item_with_icon_it(data ={})
     data = DEFAULT_DATA.merge(data)
 
@@ -75,6 +83,7 @@ class OrderDetailsPage
 
   def party_personalize_item_with_none
 
+    sleep(2)
     add_to_order
     sleep(2)
     self.select_pers_option = "None"
