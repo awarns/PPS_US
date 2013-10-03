@@ -30,6 +30,7 @@ class DownlineResultsReportPage
 
   def verify_team_view_results
 
+    sleep(2)
     self.group_focus = "All (Expanded)"
     sleep(2)
     name =  team_downline_results_element[25][2].text

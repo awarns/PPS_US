@@ -48,3 +48,28 @@ When(/^I Login with an Invalid Password$/) do
   on(LoginPage).login(:password => 'testing32')
 
 end
+
+Given(/^I am on my consultants replicated site$/) do
+
+  count = 1
+
+  while count == 1
+
+    visit ConsultantReplicatedSitePage
+
+    if @browser.link(:text, "Home").exists? == false
+
+      @browser.refresh
+      count = 1
+
+    else
+
+      count = 2
+
+    end
+
+
+  end
+
+
+end

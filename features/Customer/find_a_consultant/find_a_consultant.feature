@@ -13,20 +13,16 @@ Background:
 
   Scenario: Locate Consultant by her name
     When I find a consultant using her name
-    Then I should see "YOUR CONSULTANT"
     And I should see "Kelley Fullen"
 
   Scenario: Verify still cookied to consultant
     When I find a consultant using her name
-    Then I should see "YOUR CONSULTANT"
     And I should see "Kelley Fullen"
     When I am on the Connect with a Consultant Page
-    Then I should see "YOUR CONSULTANT"
     And I should see "Kelley Fullen"
 
   Scenario: I need a consultant
     When I use I need a consultant
-    Then I should see "YOUR CONSULTANT"
     And I should see "Thanks for your interest in Thirty-One Gifts!"
 
   Scenario: Switching Consultants and nav to site just one time

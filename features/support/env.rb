@@ -166,5 +166,23 @@ PageObject::PageFactory.routes = {
         [YourInvoicePage, :pay_for_order],
         [PaymentPage, :checkout_with_gift_cert],
     ],
+    :customer_retail_order => [
+        [ConsultantReplicatedSitePage, :click_place_an_order],
+        [CstProductsPage, :cst_add_prod_to_order],
+        [CstProductDetailsPage, :cst_prod_details_add_to_cart],
+        [PersonalizationPage, :personalize_with_embroidery],
+        [CstProductsPage, :cst_add_prod_to_order, :search_for_item => '3244'],
+        [CstProductDetailsPage, :cst_prod_details_add_to_cart],
+        [PersonalizationPage, :personalize_with_none],
+        [CstProductDetailsPage, :view_items_in_cart],
+        [CstShoppingCartPage, :click_checkout],
+        [CstCheckoutShippingInfoPage, :enter_cst_shipping_info_retail],
+        [YourInvoicePage, :cst_pay_for_order]
+    ],
+    :customer_checkout => [
+        [CstOrderPaymentPage, :cst_checkout_with_credit_card],
+        [CstOrderPaymentPage, :cst_submit_order],
+        [SubmittingOrderPage, :cst_verify_submission]
+    ],
 }
 

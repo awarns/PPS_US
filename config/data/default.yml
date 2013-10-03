@@ -62,7 +62,7 @@ host_information:
   party_zip_code: '43219'
   party_email: 'awarns@thirtyonegifts.com'
 
-add_guest:
+add_guest_party:
   ship_to_hostess: false
   guest_f_name: 'Harvey'
   guest_l_name: 'Specter'
@@ -175,4 +175,18 @@ fac_need_cns:
   option_1: 'true'
   option_2: 'true'
   option_3: 'true'
+
+cst_add_prod:
+  search_for_item: '3000'
+
+cst_qty:
+  qty: '1'
+
+cst_shipping_retail:
+  cst_first_name: 'Andy'
+  cst_last_name: 'Warns'
+  cst_address_line_1: '205 N. Nelson Rd.'
+  cst_zip_code: '43219'
+  cst_email: 'awarns@thirtyonegifts.com'
+
 

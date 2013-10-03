@@ -2,12 +2,17 @@ class YourInvoicePage
   include PageObject
   include DataMagic
 
+
+  button(:pay_for_order_button, :value => "Pay For Order")
   link(:change_shipping_info, :text => "Change Shipping Information")
   link(:back_to_products, :id => "MasterContentBody1_content_rep_HyperLink1")
   link(:view_cart, :text => "View Cart")
-  table(:table_totals, :id => "MasterContentBody1_content_rep_DataGrid1")
-  button(:pay_for_order_button, :value => "Pay For Order")
+  link(:ok_return_policy) { |page| page.div_element(:id => "RadWindowWrapper_ctl00_ctl00_MasterContentBody1_PageContent_RadWindow2").link_element(:text => "OK")}
+  button(:yes_31gives) { |page| page.div_element(:id => "RadWindowWrapper_ctl00_ctl00_MasterContentBody1_PageContent_RadWindow1").button_element(:text => "Yes")}
+  button(:no_31gives) { |page| page.div_element(:id => "RadWindowWrapper_ctl00_ctl00_MasterContentBody1_PageContent_RadWindow1").button_element(:text => "No")}
+  link(:cst_pay_for_order_link, :id => "MasterContentBody1_PageContent_btnOffer")
 
+  table(:table_totals, :id => "MasterContentBody1_content_rep_DataGrid1")
 
   page_url "#{FigNewton.base_url}/forms/frm_temp_invoice.aspx"
 
@@ -42,6 +47,28 @@ class YourInvoicePage
 
     sleep(4)
     pay_for_order_button
+
+  end
+
+  def cst_pay_for_order
+
+
+    cst_pay_for_order_link
+    sleep(1)
+    ok_return_policy
+
+  end
+
+  def yes_on_31gives
+
+    sleep(3)
+    yes_31gives
+
+  end
+
+  def no_on_31gives
+
+    no_31gives
 
   end
 

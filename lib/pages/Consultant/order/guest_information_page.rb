@@ -19,7 +19,7 @@ class GuestInformationPage
 
   def add_guest(data ={})
 
-    populate_page_with data_for(:add_guest, data)
+    populate_page_with data_for(:add_guest_party, data)
 
     while page_text =~ /.*First Name.*/
 
