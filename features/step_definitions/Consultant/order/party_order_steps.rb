@@ -125,3 +125,19 @@ When(/^I Submit the Party Order$/) do
   navigate_all(:using => :party_checkout)
 
 end
+
+When(/^I create my party order as a consultant$/) do
+
+  navigate_all(:using => :create_order_from_event)
+
+end
+
+When(/^I submit my party event order$/) do
+
+  on(OrderDetailsPage).add_item_to_party_order(:item_code => "3057")
+  on(OrderDetailsPage).party_personalize_item_with_icon_it
+  navigate_all(:using => :party_order_nav_to_checkout)
+  navigate_all(:using => :party_checkout)
+
+
+end

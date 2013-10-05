@@ -26,6 +26,12 @@ class HostInformationPage
 
   end
 
+  def click_save_and_continue
+
+    save_and_continue
+
+  end
+
 
 
 end

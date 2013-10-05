@@ -71,7 +71,7 @@ add_guest_party:
   guest_email: 'awarns@thirtyonegifts.com'
 
 add_party_item:
-  customer_list: 'Harvey Specter'
+  customer_list: 'Andy Warns'
   item_code: '3057'
   quantity: '1'
 
@@ -185,6 +185,14 @@ cst_qty:
 cst_shipping_retail:
   cst_first_name: 'Andy'
   cst_last_name: 'Warns'
+  cst_address_line_1: '205 N. Nelson Rd.'
+  cst_zip_code: '43219'
+  cst_email: 'awarns@thirtyonegifts.com'
+
+cst_shipping_party:
+  ship_to_host: false
+  cst_first_name: 'Harvey'
+  cst_last_name: 'Specter'
   cst_address_line_1: '205 N. Nelson Rd.'
   cst_zip_code: '43219'
   cst_email: 'awarns@thirtyonegifts.com'

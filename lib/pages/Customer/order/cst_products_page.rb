@@ -10,6 +10,7 @@ class CstProductsPage
 
   def cst_add_prod_to_order(data ={})
 
+
     populate_page_with data_for(:cst_add_prod, data)
     search_button
     sleep(3)

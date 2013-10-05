@@ -21,6 +21,7 @@ class CstShoppingCartPage
 
     remove
     @browser.alert.ok
+    sleep(3)
 
   end
 

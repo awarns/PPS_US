@@ -184,5 +184,29 @@ PageObject::PageFactory.routes = {
         [CstOrderPaymentPage, :cst_submit_order],
         [SubmittingOrderPage, :cst_verify_submission]
     ],
+    :cst_party_order => [
+        [ConsultantReplicatedSitePage, :click_place_an_order],
+        [CstShopOnlinePage, :shop_now],
+        [CstEventDetailsPage, :shop_now],
+        [CstProductsPage, :cst_add_prod_to_order],
+        [CstProductDetailsPage, :cst_prod_details_add_to_cart],
+        [PersonalizationPage, :personalize_with_embroidery],
+        [CstProductsPage, :cst_add_prod_to_order, :search_for_item => '3244'],
+        [CstProductDetailsPage, :cst_prod_details_add_to_cart],
+        [PersonalizationPage, :personalize_with_none],
+        [CstProductDetailsPage, :view_items_in_cart],
+        [CstShoppingCartPage, :click_checkout],
+        [CstCheckoutShippingInfoPage, :enter_cst_party_info],
+        [YourInvoicePage, :cst_pay_for_order]
+    ],
+    :create_order_from_event => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_my_events],
+        [MyEventsHomePage, :edit_existing_event],
+        [EventGuestListPage, :create_the_order],
+        [HostInformationPage, :click_save_and_continue],
+    ]
+
+
 }
 

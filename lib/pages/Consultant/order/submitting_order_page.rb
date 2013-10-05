@@ -78,7 +78,7 @@ class SubmittingOrderPage
 
     sleep(8)
 
-    cst_submit_message.should =~ /.*Failed to process payments:.*/
+    cst_submit_message.should =~ /.*Invalid card number.*/
     back_to_payments
 
   end

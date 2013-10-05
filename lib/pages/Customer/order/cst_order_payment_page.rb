@@ -65,6 +65,7 @@ class CstOrderPaymentPage
   def delete_existing_payment
 
     delete
+    sleep(4)
 
   end
 
