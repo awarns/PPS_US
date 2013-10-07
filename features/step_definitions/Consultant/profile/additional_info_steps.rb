@@ -64,8 +64,15 @@ When(/^Delete a credit card$/) do
   on(AdditionalInfoPage).delete_card
 
 end
+
 Then(/^I should not see my saved credit card with name "([^"]*)"$/) do |name|
 
   on(AdditionalInfoPage).verify_card_does_not_exist(name)
+
+end
+
+When(/^delete all credit cards$/) do
+
+  on(AdditionalInfoPage).delete_all_cards
 
 end

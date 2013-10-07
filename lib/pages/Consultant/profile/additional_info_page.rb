@@ -11,7 +11,7 @@ class AdditionalInfoPage
   link(:manage_cards, :text => "Manage Cards")
   link(:manage_alerts, :text => "Manage Alerts")
   link(:change_my_password, :text => "Change My Password")
-  link(:doc_1, :text => "Consultant Agreement-Terms &Conditions")
+  link(:doc_1, :text => "Consultant Agreement-Terms & Conditions")
   link(:doc_2, :text => "Consent to Electronic Record")
   link(:doc_3, :text => "Consultant Guidebook - New 2013")
   link(:doc_4, :text => "Consultant Guidebook - 2012")
@@ -29,7 +29,7 @@ class AdditionalInfoPage
     text_field(:cc_address, :id => "MasterContentBody1_txt_cadr", :frame => frame)
     text_field(:cc_zip, :id => "MasterContentBody1_txt_czip", :frame => frame)
     button(:save_button, :value => "Save", :frame => frame)
-    table(:table_cards, :id => "MasterContentBody1_data_cards", :frame => frame)
+    table(:table_cards, :id => "MasterContentBody1_tbl_main", :frame => frame)
     link(:select_card, :text => "Select", :index => 0, :frame => frame)
     link(:delete_card_link, :text => "Delete", :index => 0, :frame => frame)
   end
@@ -96,6 +96,20 @@ class AdditionalInfoPage
     populate_page_with data_for(:edit_cc, data)
     save_button
 
+
+  end
+
+  def delete_all_cards
+
+    manage_cards
+
+    sleep(3)
+    while self.table_cards =~ /.*Delete.*/
+
+      delete_card_link
+      sleep(2)
+
+    end
 
   end
 

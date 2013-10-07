@@ -28,6 +28,10 @@ Background:
     And I Change My Password
     Then I should see "Your password has been changed."
 
+   Scenario: Delete All Cards
+     When I go to the Additional Info Page
+     And delete all credit cards
+
   Scenario: Add Card to Manage My Cards
     When I go to the Additional Info Page
     And I add a credit card to my profile
