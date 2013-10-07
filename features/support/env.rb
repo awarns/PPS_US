@@ -205,8 +205,12 @@ PageObject::PageFactory.routes = {
         [MyEventsHomePage, :edit_existing_event],
         [EventGuestListPage, :create_the_order],
         [HostInformationPage, :click_save_and_continue],
-    ]
-
+    ],
+    :nav_to_order_history => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order_history],
+        [OrderHistoryPage, :view_order_in_popup]
+    ],
 
 }
 

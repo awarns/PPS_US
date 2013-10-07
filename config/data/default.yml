@@ -197,4 +197,8 @@ cst_shipping_party:
   cst_zip_code: '43219'
   cst_email: 'awarns@thirtyonegifts.com'
 
+customer_search_ord_hist:
+  f_name: 'Andy'
+  l_name: 'Warns'
+
 
