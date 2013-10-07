@@ -1,0 +1,2 @@
+default: --no-source --color --format pretty
+uat_smoke: --no-source --color --format pretty --tags @uat_smoke
