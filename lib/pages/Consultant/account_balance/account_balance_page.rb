@@ -30,7 +30,7 @@ class AccountBalancePage
 
   def verify_popup
 
-    sleep(6)
+    sleep(15)
     popup_text.should =~ /.*Order Number.*/
 
   end

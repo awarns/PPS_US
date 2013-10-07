@@ -71,7 +71,7 @@ add_guest_party:
   guest_email: 'awarns@thirtyonegifts.com'
 
 add_party_item:
-  customer_list: 'Andy Warns'
+  customer_list: 'Harvey Specter'
   item_code: '3057'
   quantity: '1'
 
