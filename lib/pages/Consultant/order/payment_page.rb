@@ -45,10 +45,13 @@ class PaymentPage
 
   end
 
-  def checkout_with_gift_cert
+  def checkout_with_gift_cert(giftcertnum)
 
-   puts @gift_cert_number
-
+    sleep(3)
+    gc_payment
+    self.gc_num = giftcertnum
+    self.gc_amount = "25.00"
+    save_payment
 
   end
 
