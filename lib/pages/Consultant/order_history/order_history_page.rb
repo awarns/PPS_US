@@ -50,12 +50,14 @@ class OrderHistoryPage
   def edit_info
 
     edit_cust_info
+    sleep(4)
 
   end
 
   def view_orders
 
     view_cust_orders
+    sleep(2)
 
   end
 

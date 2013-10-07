@@ -30,7 +30,7 @@ Background:
 
   Scenario: Checkout with out 31Gives on Order
     When I submit a customer retail order without 31gives
-    Then I should see "Outstanding Balance: $74.20"
+    Then I should see "Outstanding Balance: $79.21"
     And I submit my customer order
 
   Scenario: Delete Payment

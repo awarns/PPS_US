@@ -92,5 +92,23 @@ class PaymentPage
 
   end
 
+  def party_checkout_cst(data ={})
+    data = DEFAULT_DATA.merge(data)
+
+    @balance = @browser.table(:class, "normal").text
+    arr = @balance.split /[\$_]/
+    @balance = arr[3]
+
+    cc_payment
+    self.card_number = data['card_number']
+    self.card_exp_date = data['card_exp_date']
+    data['amount'] = @balance
+    self.amount = data['amount']
+    save_payment
+    sleep(2)
+
+
+  end
+
 
 end

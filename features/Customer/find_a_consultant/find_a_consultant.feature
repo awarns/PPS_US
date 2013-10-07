@@ -23,13 +23,13 @@ Background:
 
   Scenario: I need a consultant
     When I use I need a consultant
-    And I should see "Thanks for your interest in Thirty-One Gifts!"
+    And I should not see "Kelley Fullen"
 
   Scenario: Switching Consultants and nav to site just one time
     When I find a consultant using her name
     Then I should see "Kelley Fullen"
     And I switch consultants as a one time opportunity
-    Then I should see "Holley Cox"
+    Then I should not see "Kelley Fullen"
     And I am on the Connect with a Consultant Page
     Then I should see "Kelley Fullen"
     
@@ -37,7 +37,7 @@ Background:
     When I find a consultant using her name
     Then I should see "Kelley Fullen"
     And I switch consultants permanently
-    Then I should see "Holley Cox"
+    Then I should not see "Kelley Fullen"
     And I am on the Connect with a Consultant Page
-    Then I should see "Holley Cox"
+    Then I should not see "Kelley Fullen"
 

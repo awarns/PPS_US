@@ -35,7 +35,7 @@ class OrderDetailsPage
     table(:order_summary, :class => "table_style", :index => 4, :frame => frame)
     button(:payments, :value => "Payments", :frame => frame)
   end
-  link(:ok_pop_up) { |page| page.div_element(:id => "simplemodal-container").link_element(:text => "OK")}
+  link(:ok_pop_up) { |page| page.div_element(:id => "simplemodal-container").link_element(:text => "Ok")}
 
   def click_add_guest
 
@@ -94,6 +94,7 @@ class OrderDetailsPage
 
   def order_summary_text
 
+    sleep(2)
     order_summary
 
   end
@@ -142,7 +143,7 @@ class OrderDetailsPage
 
   def click_ok_in_popup
 
-    sleep(2)
+    sleep(5)
     ok_pop_up
 
   end

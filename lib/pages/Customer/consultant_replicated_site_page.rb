@@ -6,7 +6,7 @@ class ConsultantReplicatedSitePage
 
   page_url "#{FigNewton.base_url}/102091"
 
-
+  div(:header_text, :id => "header-rep-info")
   link(:my_parties, :text => "My Parties")
   link(:lets_party, :text => "Let's Party")
   link(:place_an_order, :text => "Place an Order")
@@ -17,6 +17,12 @@ class ConsultantReplicatedSitePage
   def click_place_an_order
 
     place_an_order
+
+  end
+
+  def verify_personalized_website
+
+    header_text.should =~ /.*Andy Warns.*/
 
   end
 

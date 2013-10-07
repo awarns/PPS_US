@@ -12,5 +12,5 @@ Background:
     When I order a gift certificate
     Then I should see my gift card in my manage gift certificates table
 
-  Scenario: Redeem Gift Cert
-    When I redeem a gift cert on an order
+#  Scenario: Redeem Gift Cert
+#    When I redeem a gift cert on an order

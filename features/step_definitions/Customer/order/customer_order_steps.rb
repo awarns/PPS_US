@@ -34,7 +34,7 @@ end
 
 When(/^I submit a customer retail order with 31gives$/) do
 
-  navigate_all(:using => :cst_party_order)
+  navigate_all(:using => :customer_retail_order)
   on(YourInvoicePage).yes_on_31gives
 
 end

@@ -137,6 +137,7 @@ When(/^I submit my party event order$/) do
   on(OrderDetailsPage).add_item_to_party_order(:item_code => "3057")
   on(OrderDetailsPage).party_personalize_item_with_icon_it
   navigate_all(:using => :party_order_nav_to_checkout)
+  on(PaymentPage).party_checkout_cst
   navigate_all(:using => :party_checkout)
 
 

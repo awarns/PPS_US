@@ -13,6 +13,7 @@ class EmailPage
   def create_an_invitation
 
     create_an_invite
+    sleep(4)
 
   end
 

@@ -19,30 +19,32 @@ class OrderMainPage
 
   def click_business_supply_order
 
+    sleep(2)
     business_supply_order
 
   end
 
   def click_party_order
 
+    sleep(2)
     party_order
 
   end
 
   def click_retail_order
-
+    sleep(2)
     retail_order
 
   end
 
   def click_business_expression_order
-
+    sleep(2)
     business_expression
 
   end
 
   def continue_order
-
+    sleep(2)
     continue_1
 
   end

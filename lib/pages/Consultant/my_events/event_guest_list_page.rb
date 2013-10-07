@@ -81,7 +81,7 @@ class EventGuestListPage
     preview_invites
     sleep(2)
     view_invite_link
-    sleep(10)
+    sleep(30)
     rsvp_to_party_element.click
 
 
