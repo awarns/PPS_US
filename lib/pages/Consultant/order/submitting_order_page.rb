@@ -83,5 +83,13 @@ class SubmittingOrderPage
 
   end
 
+  def verify_subscription
+
+
+    sleep(8)
+
+
+  end
+
 
 end

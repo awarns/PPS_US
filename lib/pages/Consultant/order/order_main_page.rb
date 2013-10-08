@@ -78,5 +78,11 @@ class OrderMainPage
 
   end
 
+  def click_subscriptions
+
+    subscriptions
+
+  end
+
 
 end
