@@ -22,7 +22,7 @@ class PaymentPage
   text_field(:gc_amount, :id => "MasterContentBody1_content_rep_txt_gcamt")
   select_list(:customer_list, :id => "MasterContentBody1_content_rep_dd_ccCust")
   button(:save_payment, :value => "Save Payment")
-  button(:submit_order, :value => "Submit Order to Home Office")
+  button(:submit_order, :value => /.*S.*/)
 
 
 
