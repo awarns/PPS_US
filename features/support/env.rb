@@ -226,7 +226,6 @@ PageObject::PageFactory.routes = {
     ],
     :csr_auto_ling => [
         [EmployeeCsrManagerPage, :search_csr_manager]
-    ],
-
+    ]
 }
 
