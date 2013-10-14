@@ -55,7 +55,6 @@ class MyFollowUpsPage
 
     follow_up_table_element[1][0].text.should_not == "FollowUp CleanUp"
 
-
   end
 
 

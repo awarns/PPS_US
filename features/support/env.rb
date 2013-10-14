@@ -211,6 +211,22 @@ PageObject::PageFactory.routes = {
         [VirtualOfficeHomePage, :click_order_history],
         [OrderHistoryPage, :view_order_in_popup]
     ],
+    :nav_to_subscriptions => [
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_subscriptions],
+        [MySubscriptionsPage, :order_subscription],
+        [ShippingInformationPage, :click_save_and_continue],
+        [OrderDetailsPage, :click_payments],
+        [PaymentPage, :checkout_with_credit_card],
+        [SubmittingOrderPage, :verify_subscription],
+    ],
+    :employee_nav_to_csr => [
+        [EmployeeCsrManagerPage, :search_csr_manager],
+    ],
+    :csr_auto_ling => [
+        [EmployeeCsrManagerPage, :search_csr_manager]
+    ],
 
 }
 

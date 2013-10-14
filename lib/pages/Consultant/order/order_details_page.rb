@@ -49,7 +49,6 @@ class OrderDetailsPage
     populate_page_with data_for(:add_party_item, data)
     add_lookup
 
-
   end
 
   def add_item_to_business_supply_order
@@ -131,7 +130,6 @@ class OrderDetailsPage
     self.pers_text = data['pers_text']
     sleep(2)
     done_personalizing
-
 
   end
 
