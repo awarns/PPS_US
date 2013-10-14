@@ -221,6 +221,15 @@ PageObject::PageFactory.routes = {
         [PaymentPage, :checkout_with_credit_card],
         [SubmittingOrderPage, :verify_subscription],
     ],
+<<<<<<< HEAD
+=======
+    :employee_nav_to_csr => [
+        [EmployeeCsrManagerPage, :search_csr_manager],
+    ],
+    :csr_auto_ling => [
+        [EmployeeCsrManagerPage, :search_csr_manager]
+    ],
+>>>>>>> master
 
 }
 

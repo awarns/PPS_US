@@ -201,4 +201,11 @@ customer_search_ord_hist:
   f_name: 'Andy'
   l_name: 'Warns'
 
+employee_login:
+  employee_id: '1387'
+  employee_password: 'testing31'
+
+csr_search:
+  id_number: '102091'
+
 

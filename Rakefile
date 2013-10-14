@@ -10,6 +10,10 @@ Cucumber::Rake::Task.new(:uat_smoke, "Run features for Uat Smoke Test") do |t|
   t.profile = 'uat_smoke'
 end
 
+Cucumber::Rake::Task.new(:prod_smoke, "Run features for Production Smoke Test") do |t|
+  t.profile = 'prod_smoke'
+end
+
 task :default => :features
 
 
