@@ -19,6 +19,8 @@ class AddressInfoPage
 
     populate_page_with data_for(:profile_page, data)
     save
+    sleep(3)
+    save
 
   end
 
