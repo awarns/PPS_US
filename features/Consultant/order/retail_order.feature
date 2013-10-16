@@ -3,8 +3,8 @@ Feature: Retail Order as a Consultant
   As a consultant
   I want to place a retail order
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Cancel Any Unsubmitted Orders
     When I cancel my unsubmitted orders

@@ -54,22 +54,22 @@ end
 
 When(/^I update an item in my cart$/) do
 
- on(ShopOnlinePage).click_view_cart
- on(ProductsInYourCartPage).click_update_prod_in_cart
+  on(ShopOnlinePage).click_view_cart
+  on(ProductsInYourCartPage).click_update_prod_in_cart
 
 end
 
 When(/^I personalize using none$/) do
 
- on(PersonalizationPage).personalize_with_none
+  on(PersonalizationPage).personalize_with_none
 
 end
 
 When(/^I change my shipping information$/) do
 
- visit YourInvoicePage
- on(YourInvoicePage).click_change_shipping_info
- on(ShippingInformationPage).enter_retail_shipping_info(:address => '111 S Figueroa St', :zip_code => '90015')
+  visit YourInvoicePage
+  on(YourInvoicePage).click_change_shipping_info
+  on(ShippingInformationPage).enter_retail_shipping_info(:address => '111 S Figueroa St', :zip_code => '90015')
 
 end
 

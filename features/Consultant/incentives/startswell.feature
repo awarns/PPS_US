@@ -5,8 +5,8 @@ Feature: Startswell
   startswell information
 
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
 
   Scenario: View Gen 0

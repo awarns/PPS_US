@@ -3,8 +3,8 @@ Feature: Party Order as a Consultant
   As a consultant
   I want to place a party Order
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Cancel Orders
     When I cancel my unsubmitted orders

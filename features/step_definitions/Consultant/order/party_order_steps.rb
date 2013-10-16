@@ -26,7 +26,7 @@ end
 
 Then(/^I verify my party order totals,Retail:"([^"]*)",Volume:"([^"]*)",Subtotal:"([^"]*)",ShipHand:"([^"]*)",Tax:"([^"]*)",Total:"([^"]*)"$/) do |retail, volume, subtotal, shiphand, tax, total|
 
-  on(OrderDetailsPage).order_summary_text.should include retail,volume,subtotal,shiphand,tax,total
+  on(OrderDetailsPage).order_summary_text.should include retail, volume, subtotal, shiphand, tax, total
 
 end
 
@@ -37,7 +37,7 @@ When(/^I add a hostess credit item to my order$/) do
 
 end
 
-When(/^I verify the Party Hostess Totals Hostess Plan Base Amt "([^"]*)" Hostess Half Price "([^"]*)" Hostess Credit "([^"]*)" Exclusive Hostess Offer "([^"]*)" Hostess Overage "([^"]*)"$/) do |hbase, hhalf, hcredit, hoffer,hover|
+When(/^I verify the Party Hostess Totals Hostess Plan Base Amt "([^"]*)" Hostess Half Price "([^"]*)" Hostess Credit "([^"]*)" Exclusive Hostess Offer "([^"]*)" Hostess Overage "([^"]*)"$/) do |hbase, hhalf, hcredit, hoffer, hover|
 
   on(OrderDetailsPage).order_summary_text.should include hbase, hhalf, hcredit, hoffer, hover
 
@@ -51,7 +51,6 @@ When(/^I add an exclusive hostess offer price item to my order$/) do
 end
 
 When(/^I add a hostess half price item to my order$/) do
-
 
 
   on(OrderDetailsPage).add_item_to_party_order(:customer_list => "Hostess Half Price", :item_code => "3000")
@@ -98,9 +97,8 @@ When(/^I add two good payments and one bad payment$/) do
 
   navigate_all(:using => :party_order_nav_to_checkout)
   on(PaymentPage).party_checkout_propay(1)
-  on(PaymentPage).party_checkout_propay(2,:card_number => "4404040404040404")
+  on(PaymentPage).party_checkout_propay(2, :card_number => "4404040404040404")
   on(PaymentPage).party_checkout_propay(3)
-
 
 
 end

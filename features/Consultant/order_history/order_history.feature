@@ -3,8 +3,8 @@ Feature: Order History
   As a consultant
   I want to view my Order History
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: View Order History Popup
     When I View an Order on the Order History Page

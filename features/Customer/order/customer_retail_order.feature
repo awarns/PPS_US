@@ -4,8 +4,8 @@ Feature: Customer Retail Order
   I want to place a retail order
   On my consultants site
 
-Background:
-  Given I am on my consultants replicated site
+  Background:
+    Given I am on my consultants replicated site
 
   Scenario: Add Items To Cart
     When I add items to my retail cart

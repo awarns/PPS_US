@@ -4,8 +4,8 @@ Feature: Summer Dream Rewards
   I want to view my summer dream rewards
 
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: View Summer Dream Rewards
     When I view My Summer Dream Rewards Incentive

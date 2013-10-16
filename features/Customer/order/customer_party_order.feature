@@ -4,8 +4,8 @@ Feature: Customer Party Order
   I want the ability to place a Customer Party Order
   As i will not be able to attend the consultant's party
 
-Background:
-  Given I am on my consultants replicated site
+  Background:
+    Given I am on my consultants replicated site
 
   Scenario: Setup Event
     When I am on Her Virtual Office

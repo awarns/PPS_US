@@ -3,8 +3,8 @@ Feature: Non Party Event
   As a consultant
   I want to create a Non Party Event
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Cancel Event
     When I cancel my open events

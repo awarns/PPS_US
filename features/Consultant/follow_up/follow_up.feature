@@ -4,8 +4,8 @@ Feature: Follow Up
   I want to create follow ups
 
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Add a follow up
     When I add follow up

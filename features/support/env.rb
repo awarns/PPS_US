@@ -189,7 +189,6 @@ PageObject::PageFactory.routes = {
         [HostInformationPage, :click_save_and_continue],
     ],
     :nav_to_order_history => [
-        [LoginPage, :login],
         [VirtualOfficeHomePage, :click_order_history],
         [OrderHistoryPage, :view_order_in_popup]
     ],

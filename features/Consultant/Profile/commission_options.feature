@@ -4,8 +4,8 @@ Feature: Commission Options
   I want to view and edit my commission options
   under Manage My Profile
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Choose Check Option and Enter Info
     When I choose the check option and fill out information

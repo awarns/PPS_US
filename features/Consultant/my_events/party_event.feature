@@ -4,8 +4,8 @@ Feature: Party Event
   I want to setup a Party Event
   and invite guests
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Enter Event Details for Party Event
     When I Create a Party Event

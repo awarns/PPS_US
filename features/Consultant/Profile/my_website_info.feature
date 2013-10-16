@@ -4,8 +4,8 @@ Feature: My Website Information
   I want the ability to edit my website information
   and verify the results on my personal site
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Upload Photo
     When I use the upload photo feature

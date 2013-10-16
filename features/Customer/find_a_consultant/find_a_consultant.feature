@@ -4,8 +4,8 @@ Feature: Find a Consultant
   I want to find a consultant
   because i either forgot mine or do not have one
 
-Background:
-  Given I am on the Connect with a Consultant Page
+  Background:
+    Given I am on the Connect with a Consultant Page
 
   Scenario: I have a consultant search by email
     When I find a consultant using my email address
@@ -32,8 +32,8 @@ Background:
     Then I should not see "Kelley Fullen"
     And I am on the Connect with a Consultant Page
     Then I should see "Kelley Fullen"
-    
-  Scenario: Switching Consultants and update preferred Consultant 
+
+  Scenario: Switching Consultants and update preferred Consultant
     When I find a consultant using her name
     Then I should see "Kelley Fullen"
     And I switch consultants permanently

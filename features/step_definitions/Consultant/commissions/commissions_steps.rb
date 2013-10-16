@@ -11,11 +11,10 @@ When(/^I View My Rebates Info$/) do
 end
 
 
-
 Then(/^I should see "([^"]*)"$/) do |message|
   @current_page.text.should include message
 end
 
 Then(/^I should not see "([^"]*)"$/) do |message|
-   @current_page.text.should_not include message
+  @current_page.text.should_not include message
 end
