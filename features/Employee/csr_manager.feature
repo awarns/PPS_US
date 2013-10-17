@@ -39,6 +39,7 @@ Feature: CSR Manager
   Scenario: Add Notes
     When I add a note to a consultant
     Then I test source tree
+    And Test 2
 
 
 
