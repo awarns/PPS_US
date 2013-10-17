@@ -208,4 +208,8 @@ employee_login:
 csr_search:
   id_number: '102091'
 
+csr_edit_profile:
+  password: 'testing31'
+  middle_name: 'Michael'
+
 
