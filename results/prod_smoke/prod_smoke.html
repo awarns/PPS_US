@@ -1,0 +1,903 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <link href='../stylesheets/style.css' type='text/css' rel='stylesheet'/>
+    <meta charset="utf-8">
+    <title>Feature Results</title>
+</head>
+
+<body>
+
+<div style="clear: both; width=100%; background-color:#F6F6F6;">
+    <a href="../index.html" style="color=#0071BC;">&lt; Back</a>
+</div>
+
+<div style="float:left; clear:both;">
+    <div class="header_logo">
+        <img src="../images/logo.png" width="200"/>
+    </div>
+    <div class="header_description">
+        <h2 class="results">Feature Results: Prod Smoke Test</h2>
+        <br/>
+
+
+        <table class="run_stats">
+            <tr>
+                <td>started:</td>
+                <td>duration:</td>
+            </tr>
+            <tr>
+                <td>Wednesday October 16, 2013 at 15:08:19</td>
+                <td>15m17.750s</td>
+            </tr>
+        </table>  
+          <pre class="description run_stats">Story<br/>
+Running a smoke test in Production prior
+to pps coming back online the morning of a release</pre>
+    </div>
+</div>
+
+<div class="summary_body">
+    <table class="StatTable">
+        <tr>
+            <th>Summary</th>
+            <th>Executed</th>
+            <th class="passed"><img src="../images/table_passed.png" alt="passed" title="passed"> Passed</th>
+            <th class="failed"><img src="../images/table_failed.png" alt="failed" title="failed"> Failed</th>
+            <th class="skipped"><img src="../images/table_skipped.png" alt="skipped" title="skipped"> Skipped</th>
+            <th class="undefined"><img src="../images/table_undefined.png" alt="undefined" title="undefined"> Undefined
+            </th>
+            <th class="pending"><img src="../images/table_pending.png" alt="pending" title="pending"> Pending</th>
+            <th>Average Duration</th>
+        </tr>
+
+        <tr class="summary_row_header">
+            <td>Scenarios</td>
+            <td>23</td>
+            <td>18 <span class="percentage">(78.3%)</span></td>
+            <td>5 <span class="percentage">(21.7%)</span></td>
+            <td>0 <span class="percentage">(0.0%)</span></td>
+            <td>0 <span class="percentage">(0.0%)</span></td>
+            <td>0 <span class="percentage">(0.0%)</span></td>
+            <td>0m39.124s</td>
+        </tr>
+        <tr class="summary_row_header">
+            <td>Steps</td>
+            <td>53</td>
+            <td>46 <span class="percentage">(86.8%)</span></td>
+            <td>4 <span class="percentage">(7.5%)</span></td>
+            <td>3 <span class="percentage">(5.7%)</span></td>
+            <td>0 <span class="percentage">(0.0%)</span></td>
+            <td>0 <span class="percentage">(0.0%)</span></td>
+            <td>0m10.151s</td>
+        </tr>
+
+
+    </table>
+</div>
+
+<div class="feature_background">
+<div class="scenario_list">
+<br/>
+
+<h2 class="scenarios">Background: </h2>
+<table cellspacing="0" cellpadding="7" border="0" width="100%">
+    <tr>
+        <td><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td>
+            Given I login to a virtual office in production
+
+        </td>
+    </tr>
+</table>
+<br/>
+
+<h2 class="scenarios">Scenarios:</h2>
+<br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Update Shipping Info</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I update my shipping info
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see my updated shipping info
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Mailing Info Same as Shipping</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I use the Mailing Info Same as Shipping Link
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then My mailing info should match my shipping info
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Run Downline in List View</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I run my downline report in &quot;List View&quot;
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see my List View downline report
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Run Downline in Team View</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I run my downline report in &quot;Team View&quot;
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see my Team View downline report
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Add a Contact</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I Add a contact
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see &quot;Information Saved&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Create an Invitation</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I create an invitation
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see &quot;My Events&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Create a Branded Email</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I create a branded email
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see &quot;Your email has been sent!&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="failed">Add Items to Order</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I add an item to a business supply order
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/failed.png" alt="failed" title="failed"></td>
+        <td class="">
+
+            Then I should see &quot;$64.80&quot;
+            <table>
+                <tr class="error">
+                    <td class="message">
+                        <strong><pre>expected &quot;Andy Warns is logged in (Logout)\nHomeHelp\nProfile\nIncentives\nCo. Events\nDownline\nCommissions\nOrder\nOrder Hist.\nAcct Bal.\nMy Events\nEmail\nOur Catalog\nBack To Order\nPayment\n  Add a new payment:\n+ Credit Card Payment\n+ Gift Certificate Payment\n\nOrder Total: $64.95\nPayments: $0.00\nOutstanding Balance: $64.95\n\nThere have not been any payments made for this order. Please add a payment using the options on the left.\nConnect\nWith Us\nMy Thirty-One\nMy Homepage\nMy Parties\nMy Story\nEmail Me\nGiving Back\nCatalog\nFall 2013\nPlace An Order\nPersonalization\nSpirit Collection\nCollegiate Spirit\nSpecial Offers\nCustomer Specials\nHostess Exclusives\nBecome A Consultant\nJoin My Team\nHost a Party\nHostess Exclusives\nWebsite\nPrivacy Policy\nReturn Policy\nTerms of Use\nEmail Subscription Center\n© 2013 Thirty-One Gifts, LLC\n3425 Morse Crossing, Columbus, OH 43219Map1-866-GIFTS31\nVisit the Direct Selling Association (DSA) website\nThirty-One is a proud member of the Direct Selling Association and abides by their code of ethics.\n &quot; to include &quot;$64.80&quot;
+Diff:
+@@ -1,2 +1,56 @@
+-$64.80
++Andy Warns is logged in (Logout)
++HomeHelp
++Profile
++Incentives
++Co. Events
++Downline
++Commissions
++Order
++Order Hist.
++Acct Bal.
++My Events
++Email
++Our Catalog
++Back To Order
++Payment
++  Add a new payment:
+++ Credit Card Payment
+++ Gift Certificate Payment
++
++Order Total: $64.95
++Payments: $0.00
++Outstanding Balance: $64.95
++
++There have not been any payments made for this order. Please add a payment using the options on the left.
++Connect
++With Us
++My Thirty-One
++My Homepage
++My Parties
++My Story
++Email Me
++Giving Back
++Catalog
++Fall 2013
++Place An Order
++Personalization
++Spirit Collection
++Collegiate Spirit
++Special Offers
++Customer Specials
++Hostess Exclusives
++Become A Consultant
++Join My Team
++Host a Party
++Hostess Exclusives
++Website
++Privacy Policy
++Return Policy
++Terms of Use
++Email Subscription Center
++© 2013 Thirty-One Gifts, LLC
++3425 Morse Crossing, Columbus, OH 43219Map1-866-GIFTS31
++Visit the Direct Selling Association (DSA) website
++Thirty-One is a proud member of the Direct Selling Association and abides by their code of ethics.
++ 
+ (RSpec::Expectations::ExpectationNotMetError)</pre>
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+				<pre class="ruby"><strong>./features/step_definitions/Consultant/commissions/commissions_steps.rb
+                </strong><code><span class="linenum">14</span>
+                    <span class="linenum">15</span><span class="constant">Then</span><span class="punct">(/</span><span
+                            class="regex">^I should see &quot;([^&quot;]*)&quot;$</span><span class="punct">/)</span>
+                    <span class="keyword">do</span> <span class="punct">|</span><span class="ident">message</span><span
+                            class="punct">|</span>
+                    <span class="offending"><span class="linenum">16</span>  <span
+                            class="attribute">@current_page</span><span class="punct">.</span><span
+                            class="ident">text</span><span class="punct">.</span><span class="ident">should</span> <span
+                            class="ident">include</span> <span class="ident">message</span></span>
+                    <span class="linenum">17</span><span class="keyword">end</span></code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="detail">
+					<pre>./features/step_definitions/Consultant/commissions/commissions_steps.rb:16:in `/^I should see &quot;([^&quot;]*)&quot;$/&#39;
+features/prod_smoke/prod_smoke.feature:41:in `Then I should see &quot;$64.80&quot;&#39;</pre>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<a href=''
+   onclick="img=document.getElementById('img_0'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br/>
+<img id='img_0' style='display: none' src='../images/error-OrderDetailsPage-2013-10-16 15:13:38 -0400.png'/>
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="failed">Cancel Orders</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/skipped.png" alt="skipped" title="skipped"></td>
+        <td class="skipped_step">
+
+            When I cancel my unsubmitted orders
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<a href=''
+   onclick="img=document.getElementById('img_1'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br/>
+<img id='img_1' style='display: none' src='../images/error-EmployeeLoginPage-2013-10-16 15:13:49 -0400.png'/>
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Setup Party Order</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I setup a party order
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see &quot;Order Details&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Add Guests to Party</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I continue my order
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When Add a ship to host guest to my party
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When Add a direct ship guest to my party
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see &quot;Order Details&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Add items to Party Order</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I continue my order
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When Add products to my guests
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I verify my party order totals,Retail:&quot;$210.00&quot;,Volume:&quot;$210.00&quot;,Subtotal:&quot;$210.00&quot;,ShipHand:&quot;$20.80&quot;,Tax:&quot;$17.85&quot;,Total:&quot;$248.65&quot;
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I verify the Party Hostess Totals Hostess Plan Base Amt &quot;$210.00&quot; Hostess Half Price &quot;1
+            / 0&quot; Hostess Credit &quot;$25.00 / $25.00&quot; Exclusive Hostess Offer &quot;1 / 0&quot; Hostess
+            Overage &quot;0&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Cancel Any Unsubmitted Orders</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I cancel my unsubmitted orders
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">SetUp Retail Order</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I setup a retail order
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see &quot;Shop Online&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Add product to cart</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I continue my order
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I Add product &quot;3000&quot; to my cart
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I personalize using Embroidery
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I Add product &quot;3244&quot; to my cart
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I personalize using Icon-It No Text
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I verify Order Totals, Product: &quot;$72.00&quot;, Tax: &quot;$5.72&quot;, Shipping : &quot;9.76&quot;,
+            Total: &quot;$87.48&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="failed">Submit Order</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I continue my order with items in my cart
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/failed.png" alt="failed" title="failed"></td>
+        <td class="">
+
+            When I Submit the Order
+            <table>
+                <tr class="error">
+                    <td class="message">
+                        <strong>
+                            <pre>unable to locate element, using {:value=&gt;/.*S.*/, :tag_name=&gt;&quot;button&quot;} (Watir::Exception::UnknownObjectException)</pre>
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+				<pre class="ruby"><strong>(eval)
+                </strong><code><span class="linenum">-1</span><span
+                        class="comment"># Couldn't get snippet for (eval)</span></code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="detail">
+					<pre>(eval):1:in `process_watir_call&#39;
+./lib/pages/Consultant/order/payment_page.rb:44:in `checkout_with_credit_card&#39;
+./features/step_definitions/Consultant/order/retail_order_steps.rb:85:in `/^I Submit the Order$/&#39;
+features/prod_smoke/prod_smoke.feature:79:in `And I Submit the Order&#39;</pre>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/skipped.png" alt="skipped" title="skipped"></td>
+        <td class="skipped_step">
+
+            Then I should see the Order in my Order History Table
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<a href=''
+   onclick="img=document.getElementById('img_2'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br/>
+<img id='img_2' style='display: none' src='../images/error-PaymentPage-2013-10-16 15:20:09 -0400.png'/>
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="passed">Enter Event Details for Party Event</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I Create a Party Event
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            Then I should see &quot;Invitations&quot;
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+<br/><br/>
+<table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+    <tr>
+        <th colspan="2" class="failed">Enter Invitations Information</th>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+        <td class="">
+
+            When I enter invitation information
+
+        </td>
+    </tr>
+    <tr class="borderSeparator">
+        <td class="image_tag"><img src="../images/failed.png" alt="failed" title="failed"></td>
+        <td class="">
+
+            Then I should see &quot;New Guest&quot;
+            <table>
+                <tr class="error">
+                    <td class="message">
+                        <strong>
+                            <pre>Unable to locate element: {&quot;method&quot;:&quot;tag name&quot;,&quot;selector&quot;:&quot;body&quot;} (Selenium::WebDriver::Error::NoSuchElementError)</pre>
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+				<pre class="ruby"><strong>[remote server]
+                    file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131016-34611-1fwihb3/extensions/fxdriver@googlecode.com/components/driver_component.js
+                </strong><code><span class="linenum">8891</span><span class="comment"># Couldn't get snippet for [remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131016-34611-1fwihb3/extensions/fxdriver@googlecode.com/components/driver_component.js</span></code></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="detail">
+					<pre>[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131016-34611-1fwihb3/extensions/fxdriver@googlecode.com/components/driver_component.js:8893:in `FirefoxDriver.prototype.findElementInternal_&#39;
+[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131016-34611-1fwihb3/extensions/fxdriver@googlecode.com/components/driver_component.js:8902:in `FirefoxDriver.prototype.findElement&#39;
+[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131016-34611-1fwihb3/extensions/fxdriver@googlecode.com/components/command_processor.js:10833:in `DelayedCommand.prototype.executeInternal_/h&#39;
+[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131016-34611-1fwihb3/extensions/fxdriver@googlecode.com/components/command_processor.js:10838:in `DelayedCommand.prototype.executeInternal_&#39;
+[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131016-34611-1fwihb3/extensions/fxdriver@googlecode.com/components/command_processor.js:10780:in `DelayedCommand.prototype.execute/&lt;&#39;
+./features/step_definitions/Consultant/commissions/commissions_steps.rb:16:in `/^I should see &quot;([^&quot;]*)&quot;$/&#39;
+features/prod_smoke/prod_smoke.feature:88:in `Then I should see &quot;New Guest&quot;&#39;</pre>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+<div class="img_container">
+    <a href=''
+       onclick="img=document.getElementById('img_3'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br/>
+    <img id='img_3' style='display: none' src='../images/error-EventInvitationsPage-2013-10-16 15:21:19 -0400.png'/>
+    <br/><br/>
+    <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+        <tr>
+            <th colspan="2" class="passed">Add Guest to Party</th>
+        </tr>
+        <tr class="borderSeparator">
+            <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+            <td class="">
+
+                When I add a guest to a party
+
+            </td>
+        </tr>
+        <tr class="borderSeparator">
+            <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+            <td class="">
+
+                Then I should not see &quot;No Guests have been invited to this event.&quot;
+
+            </td>
+        </tr>
+    </table>
+
+    <div class="img_container">
+        <br/><br/>
+        <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+            <tr>
+                <th colspan="2" class="passed">Edit Guest on Party</th>
+            </tr>
+            <tr class="borderSeparator">
+                <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+                <td class="">
+
+                    When I edit a guest invited to a party
+
+                </td>
+            </tr>
+            <tr class="borderSeparator">
+                <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+                <td class="">
+
+                    Then I should see a Yes RSVP
+
+                </td>
+            </tr>
+        </table>
+
+        <div class="img_container">
+            <br/><br/>
+            <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+                <tr>
+                    <th colspan="2" class="passed">Preview Invitations</th>
+                </tr>
+                <tr class="borderSeparator">
+                    <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+                    <td class="">
+
+                        When I preview an invite
+
+                    </td>
+                </tr>
+                <tr class="borderSeparator">
+                    <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+                    <td class="">
+
+                        Then I should see the invite
+
+                    </td>
+                </tr>
+            </table>
+
+            <div class="img_container">
+                <br/><br/>
+                <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+                    <tr>
+                        <th colspan="2" class="passed">Send Invitations</th>
+                    </tr>
+                    <tr class="borderSeparator">
+                        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+                        <td class="">
+
+                            When I send an invitation
+
+                        </td>
+                    </tr>
+                    <tr class="borderSeparator">
+                        <td class="image_tag"><img src="../images/passed.png" alt="passed" title="passed"></td>
+                        <td class="">
+
+                            Then I should see &quot;Emails are scheduled to be sent to the following guests:&quot;
+
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="img_container">
+                    <br/><br/>
+                    <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+                        <tr>
+                            <th colspan="2" class="failed">View Order History Popup</th>
+                        </tr>
+                        <tr class="borderSeparator">
+                            <td class="image_tag"><img src="../images/failed.png" alt="failed" title="failed"></td>
+                            <td class="">
+
+                                When I View an Order on the Order History Page
+                                <table>
+                                    <tr class="error">
+                                        <td class="message">
+                                            <strong>
+                                                <pre>unable to locate element, using {:id=&gt;&quot;txt_username&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+				<pre class="ruby"><strong>./lib/pages/login_page.rb
+                </strong><code><span class="linenum">40</span> <span class="keyword">def </span><span class="method">login</span><span
+                        class="punct">(</span><span class="ident">data</span> <span class="punct">=</span> <span
+                        class="punct">{})</span>
+                    <span class="linenum">41</span>
+                    <span class="offending"><span class="linenum">42</span>    <span
+                            class="ident">populate_page_with</span> <span class="ident">data_for</span><span
+                            class="punct">(</span><span class="symbol">:login_page</span><span
+                            class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+                    <span class="linenum">43</span> <span class="ident">click_login</span></code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="detail">
+					<pre>./lib/pages/login_page.rb:42:in `login&#39;
+./features/step_definitions/Consultant/order_history/order_history_steps.rb:3:in `/^I View an Order on the Order History Page$/&#39;
+features/prod_smoke/prod_smoke.feature:107:in `When I View an Order on the Order History Page&#39;</pre>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                        <tr class="borderSeparator">
+                            <td class="image_tag"><img src="../images/skipped.png" alt="skipped" title="skipped"></td>
+                            <td class="skipped_step">
+
+                                Then I should see my order popup
+
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="img_container">
+                        <a href=''
+                           onclick="img=document.getElementById('img_4'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br/>
+                        <img id='img_4' style='display: none'
+                             src='../images/error-LoginPage-2013-10-16 15:23:35 -0400.png'/>
+                        <br/><br/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Generated by PrettyFace
+        </div>
+</body>
+</html>

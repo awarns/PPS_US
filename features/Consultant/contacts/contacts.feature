@@ -4,8 +4,8 @@ Feature: Contacts Feature
   I want the ability to
   add to and edit my contact list
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Add a Contact
     When I Add a contact

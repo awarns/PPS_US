@@ -4,8 +4,8 @@ Feature: National Conference Bucks
   As a consultant
   I want to view my national conference bucks tracker
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
 
   Scenario: View National Conference Bucks Report

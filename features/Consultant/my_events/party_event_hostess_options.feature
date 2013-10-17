@@ -4,8 +4,8 @@ Feature: Party Event Hostess Options
   I want the ability
   To setup a Party Event with Hostess Options
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
 
   Scenario: Enter Event Details for Party Event with Hostess Options

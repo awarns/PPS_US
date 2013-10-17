@@ -33,6 +33,8 @@ class EmployeeCsrManagerPage
 
     auto_login
 
+    attach_to_window(:url => 'VirtualOfficeHome')
+
   end
 
 

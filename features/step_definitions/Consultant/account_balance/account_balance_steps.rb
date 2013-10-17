@@ -3,7 +3,6 @@ When(/^I Search My Acct Balance$/) do
   navigate_to(AccountBalancePage, :using => :nav_to_account_balance).search_account_balance
 
 
-
 end
 
 

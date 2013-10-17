@@ -13,7 +13,7 @@ end
 
 Then(/^I should see the error message "([^"]*)"$/) do |error_message|
 
-   on(AddressInfoPage).error_message(error_message)
+  on(AddressInfoPage).error_message(error_message)
 
 end
 

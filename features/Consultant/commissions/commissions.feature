@@ -3,8 +3,8 @@ Feature: Commissions Page
   As a consultant
   I want to view my commissions info
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
 
   Scenario: View My Commissions Info

@@ -14,6 +14,7 @@ class EventInvitationsPage
 
     populate_page_with data_for(:event_invitations, data)
     save_and_continue_to_guest_list
+    sleep(3)
 
   end
 
@@ -21,6 +22,7 @@ class EventInvitationsPage
 
     populate_page_with data_for(:event_invitations, data)
     preview_invite_button
+    sleep(3)
 
   end
 

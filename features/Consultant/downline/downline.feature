@@ -5,9 +5,8 @@ Feature: Downline Report
   To see my downline information
 
 
-
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
 
   Scenario: Run Downline in List View
@@ -21,7 +20,7 @@ Background:
   Scenario: Setup Downline Filter
     When I setup a downline filter
     Then I should see "Automation Filter"
-    
+
   Scenario: Delete Filter
     When I delete a filter
     Then I should see "You don't currently have any saved filters."

@@ -4,8 +4,8 @@ Feature: Manage Your Profile > Additional Information
   I want the ability to edit my Additional Info
   under manage my profile
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Update Additional Info
     When I update my additional info
@@ -28,9 +28,9 @@ Background:
     And I Change My Password
     Then I should see "Your password has been changed."
 
-   Scenario: Delete All Cards
-     When I go to the Additional Info Page
-     And delete all credit cards
+  Scenario: Delete All Cards
+    When I go to the Additional Info Page
+    And delete all credit cards
 
   Scenario: Add Card to Manage My Cards
     When I go to the Additional Info Page

@@ -18,7 +18,7 @@ end
 
 When(/^I redeem a gift cert on an order$/) do
 
-  navigate_to(ManageGiftCertificatesPage,:using => :redeem_gift_cert).get_cert_number
+  navigate_to(ManageGiftCertificatesPage, :using => :redeem_gift_cert).get_cert_number
 
   giftcertnum = @browser.table(:id, "MasterContentBody1_content_rep_dg_gc").row(:index, 1).cell(:index, 0).text
 
@@ -28,7 +28,7 @@ end
 
 When(/^I submit my order with a gift cert payment$/) do
 
-  navigate_to(ManageGiftCertificatesPage,:using => :redeem_gift_cert)
+  navigate_to(ManageGiftCertificatesPage, :using => :redeem_gift_cert)
 
   @giftcertnum = @browser.table(:id, "MasterContentBody1_content_rep_dg_gc").row(:index, 1).cell(:index, 0).text
 

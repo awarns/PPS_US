@@ -3,8 +3,8 @@ Feature: Business Supply Order
   As a consultant
   I want to place a business supply order
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Add Items to Order
     When I add an item to a business supply order

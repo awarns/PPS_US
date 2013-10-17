@@ -4,8 +4,8 @@ Feature: Gift Certificates
   I want the ability to create gift cards
   and apply them towards an Order
 
-Background:
-  Given I am on Her Virtual Office
+  Background:
+    Given I am on Her Virtual Office
 
   Scenario: Order a Gift Cert
     When I order a gift certificate

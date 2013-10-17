@@ -12,7 +12,7 @@ end
 
 When(/^I add a guest to a party$/) do
 
-  navigate_to(EventGuestListPage,:using => :nav_through_event).add_guest_to_event
+  navigate_to(EventGuestListPage, :using => :nav_through_event).add_guest_to_event
 
 end
 
@@ -35,7 +35,6 @@ When(/^I preview an invite$/) do
 end
 
 Then(/^I should see the invite$/) do
-
 
 
 end
