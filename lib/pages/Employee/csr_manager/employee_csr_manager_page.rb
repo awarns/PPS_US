@@ -13,6 +13,10 @@ class EmployeeCsrManagerPage
   link(:send_email, :text => "Send Email")
   link(:refresh_link, :id => "ContentPlaceHolder1_btn_load")
   text_field(:id_number, :id => "ContentPlaceHolder1_txt_idno")
+  in_frame(:index => 0) do |frame|
+    link(:view_link, :text => "View", :frame => frame)
+    link(:edit_link, :text => "Edit", :frame => frame)
+  end
   in_frame(:index => 1) do |frame|
     link(:modify_view, :text => "Modify / View", :frame => frame)
   end
@@ -97,6 +101,14 @@ class EmployeeCsrManagerPage
     modify_view
 
     attach_to_window(:url => 'Accounts')
+
+  end
+
+  def view_existing_order
+
+    view_link
+
+    attach_to_window(:url => 'orderno')
 
   end
 

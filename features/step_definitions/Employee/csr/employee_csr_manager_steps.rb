@@ -91,6 +91,8 @@ end
 
 When(/^I edit an order as a csr$/) do
 
+  visit EmployeeCsrManagerPage
 
+  on(EmployeeCsrManagerPage).search_csr_manager
 
 end

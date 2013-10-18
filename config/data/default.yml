@@ -215,3 +215,13 @@ csr_edit_profile:
 csr_add_note:
   description: 'Andy Automation Note'
   details: 'Yo Yo Yo'
+
+csr_ord_hist:
+  consultant_id_number: '102091'
+
+csr_contacts:
+  consultant_id: '102091'
+
+csr_downline:
+  consultant_id: '102091'
+  downline_type: 'Team View'
