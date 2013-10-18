@@ -40,6 +40,7 @@ Feature: CSR Manager
     When I add a note to a consultant
     Then I test source tree
     And Test 2
+    And Test 3
 
 
 
