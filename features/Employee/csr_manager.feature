@@ -36,11 +36,19 @@ Feature: CSR Manager
     When I view a consultants accounts info
     Then I should see "+ Add An Adjustment"
 
-  Scenario: Add Notes
-    When I add a note to a consultant
-    Then I test source tree
-    And Test 2
-    And Test 3
+#  Scenario: Add Notes
+#    When I add a note to a consultant
+#    Then I should see my added note
+
+  Scenario: View Order
+    When I view a consultants order
+    Then I should see "Order Number"
+    And I should see "Order Date"
+    And I should see "Order Total"
+
+  Scenario: Edit Order
+    When I edit an order as a csr
+
 
 
 

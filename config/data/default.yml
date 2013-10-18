@@ -212,4 +212,6 @@ csr_edit_profile:
   password: 'testing31'
   middle_name: 'Michael'
 
-
+csr_add_note:
+  description: 'Andy Automation Note'
+  details: 'Yo Yo Yo'

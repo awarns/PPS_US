@@ -61,3 +61,36 @@ When(/^I view a consultants accounts info$/) do
   on(EmployeeCsrManagerPage).csr_view_accounts
 
 end
+
+When(/^I add a note to a consultant$/) do
+
+  visit EmployeeCsrManagerPage
+
+  on(EmployeeCsrManagerPage).search_csr_manager
+  on(EmployeeCsrManagerPage).add_note
+  on(CsrNewNotePage).enter_note_details
+
+end
+
+
+Then(/^I should see my added note$/) do
+
+  on(EmployeeCsrManagerPage).verify_note
+
+end
+
+When(/^I view a consultants order$/) do
+
+  visit EmployeeCsrManagerPage
+
+  on(EmployeeCsrManagerPage).search_csr_manager
+  on(EmployeeCsrManagerPage).view_existing_order
+
+
+end
+
+When(/^I edit an order as a csr$/) do
+
+
+
+end
