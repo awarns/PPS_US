@@ -7,6 +7,10 @@ Feature: Customer Party Order
   Background:
     Given I am on my consultants replicated site
 
+  Scenario: Cancel Orders
+    When I am on Her Virtual Office
+    When I cancel my unsubmitted orders
+
   Scenario: Setup Event
     When I am on Her Virtual Office
     When I Create a Party Event

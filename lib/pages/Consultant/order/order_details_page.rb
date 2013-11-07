@@ -62,6 +62,7 @@ class OrderDetailsPage
   def party_personalize_item_with_icon_it(data ={})
     data = DEFAULT_DATA.merge(data)
 
+    sleep(2)
     add_to_order
     sleep(2)
     self.select_pers_option = "Icon-It with Text - add $10"
