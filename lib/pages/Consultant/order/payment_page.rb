@@ -8,8 +8,6 @@ class PaymentPage
       'card_exp_date' => '1215',
       'amount' => '0.00',
       'gc_amount' => '25.00',
-
-
   }
 
   link(:cc_payment, :text => "+ Credit Card Payment")

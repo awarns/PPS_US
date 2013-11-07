@@ -206,6 +206,11 @@ PageObject::PageFactory.routes = {
     ],
     :csr_auto_ling => [
         [EmployeeCsrManagerPage, :search_csr_manager]
+    ],
+    :csr_retail_order => [
+        [SelectAnOrderOptionPage, :choose_retail_order],
+        [SelectConsultantIdPage, :enter_consultant_id],
+        [CsrShippingInformationPage, :csr_order_shipping_info],
     ]
 }
 
