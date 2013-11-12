@@ -1,4 +1,4 @@
-Feature: Manage Your Profile > Address Information
+Feature: Address Information Page
 
   As a consultant
   I want to edit my Address Information Under Manage Your Profile

@@ -18,7 +18,7 @@ Feature: Customer Party Order
 
   Scenario: Add Items to my Cart ship to host
     When I add items to my party cart for ship to host
-    Then I verify Order Totals, Product: "$65.00", Tax: "$4.74", Shipping : "$5.20", Total: "$74.94"
+    Then I verify Order Totals, Product: "$65.00", Tax: "$4.91", Shipping : "$5.20", Total: "$75.11"
 
   Scenario: Add Items to my Cart direct ship
     When I add items to my party cart for direct ship
@@ -38,7 +38,7 @@ Feature: Customer Party Order
 
   Scenario: Checkout with 31Gives on Order - Ship to Host
     When I submit a customer party order with ship to host order with 31gives
-    Then I should see "Outstanding Balance: $75.00"
+    Then I should see "Outstanding Balance: $76.00"
     And I submit my customer order
 
   Scenario: Checkout with 31Gives on Order - Direct Ship

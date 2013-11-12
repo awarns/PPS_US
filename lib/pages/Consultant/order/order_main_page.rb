@@ -53,6 +53,7 @@ class OrderMainPage
 
     while order_main_page =~ /.*Cancel.*/
 
+      sleep(2)
       cancel
       @browser.alert.ok
 
