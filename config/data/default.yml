@@ -225,3 +225,6 @@ csr_contacts:
 csr_downline:
   consultant_id: '102091'
   downline_type: 'Team View'
+
+csr_order_product:
+  select_pricing_level:

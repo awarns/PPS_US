@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <link href='../../stylesheets/style.css' type='text/css' rel='stylesheet' />
+    <meta charset="utf-8">
+    <title>Feature Results</title>
+  </head>
+
+  <body>
+    
+    <div style="clear: both; width=100%; background-color:#F6F6F6;">
+      <a href="../../index.html" style="color=#0071BC;">&lt; Back</a>
+    </div>
+
+    <div style="float:left; clear:both;">
+      <div class="header_logo">
+        <img src="../../images/logo.png" width="200" />
+      </div>
+      <div class="header_description" >
+          <h2 class="results">Feature Results:  Gift Certificates</h2>
+<br />
+
+
+        <table class="run_stats">
+          <tr>
+            <td>started:</td>
+            <td>duration:</td>
+          </tr>
+          <tr>
+            <td>Thursday November 7, 2013 at 12:12:12</td>
+            <td>3m37.980s</td>
+          </tr>
+        </table>  
+          <pre class="description run_stats">Story<br/>
+As a consultant
+I want the ability to create gift cards
+and apply them towards an Order</pre>
+      </div>
+    </div>
+
+    <div class="summary_body">
+        <table class="StatTable">
+         <tr>
+          <th>Summary</th>
+          <th>Executed</th>
+	  <th class="passed"><img src="../../images/table_passed.png" alt="passed" title="passed"> Passed</th>
+          <th class="failed"><img src="../../images/table_failed.png" alt="failed" title="failed"> Failed</th>
+          <th class="skipped"><img src="../../images/table_skipped.png" alt="skipped" title="skipped"> Skipped</th>
+          <th class="undefined"><img src="../../images/table_undefined.png" alt="undefined" title="undefined"> Undefined</th>
+          <th class="pending" ><img src="../../images/table_pending.png" alt="pending" title="pending"> Pending</th>
+          <th>Average Duration</th>
+        </tr>
+
+        <tr class="summary_row_header">
+          <td>Scenarios</td>
+          <td>3</td>
+          <td>2 <span class="percentage">(66.7%)</span></td>
+          <td>1 <span class="percentage">(33.3%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>1m8.830s</td>
+        </tr>
+        <tr class="summary_row_header">
+          <td>Steps</td>
+          <td>7</td>
+          <td>6 <span class="percentage">(85.7%)</span></td>
+          <td>1 <span class="percentage">(14.3%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m26.172s</td>
+        </tr>
+
+
+      </table>
+	</div>
+
+    <div class="feature_background">
+	    <div class="scenario_list">
+	      <br />
+	      <h2 class="scenarios">Background: </h2>
+	      <table cellspacing="0" cellpadding="7" border="0" width="100%">
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I am on Her Virtual Office
+
+		  </td>
+		</tr>
+	      </table>
+	      <br />
+	      <h2 class="scenarios">Scenarios:</h2>
+	      <br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Order a Gift Cert</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I order a gift certificate
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see my gift card in my manage gift certificates table
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Redeem Gift Cert</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I redeem a gift cert on an order
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see &quot;Payments: $25.00&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  Then  I should see &quot;Outstanding Balance: $59.97&quot;
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>expected &quot;Andy Warns is logged in (Logout)\nHomeHelp\nProfile\nIncentives\nCo. Events\nDownline\nCommissions\nOrder\nOrder Hist.\nAcct Bal.\nMy Events\nEmail\nOur Catalog\nBack To Cart\nPayment\n  Add a new payment:\n+ Credit Card Payment\n+ Gift Certificate Payment\n\nOrder Total: $85.17\nPayments: $25.00\nOutstanding Balance: $60.17\n\nPayment Type Guest Amount      \nGift Certificate Andy Warns $25.00 Edit Delete View\nConnect\nWith Us\nMy Thirty-One\nMy Homepage\nMy Parties\nMy Story\nEmail Me\nGiving Back\nCatalog\nFall 2013\nPlace An Order\nPersonalization\nSpirit Collection\nCollegiate Spirit\nSpecial Offers\nCustomer Specials\nHostess Exclusives\nBecome A Consultant\nJoin My Team\nHost a Party\nHostess Exclusives\nWebsite\nPrivacy Policy\nReturn Policy\nTerms of Use\nEmail Subscription Center\n© 2013 Thirty-One Gifts, LLC\n3425 Morse Crossing, Columbus, OH 43219Map1-866-GIFTS31\nVisit the Direct Selling Association (DSA) website\nThirty-One is a proud member of the Direct Selling Association and abides by their code of ethics.\n &quot; to include &quot;Outstanding Balance: $59.97&quot;
+Diff:
+@@ -1,2 +1,57 @@
+-Outstanding Balance: $59.97
++Andy Warns is logged in (Logout)
++HomeHelp
++Profile
++Incentives
++Co. Events
++Downline
++Commissions
++Order
++Order Hist.
++Acct Bal.
++My Events
++Email
++Our Catalog
++Back To Cart
++Payment
++  Add a new payment:
+++ Credit Card Payment
+++ Gift Certificate Payment
++
++Order Total: $85.17
++Payments: $25.00
++Outstanding Balance: $60.17
++
++Payment Type Guest Amount      
++Gift Certificate Andy Warns $25.00 Edit Delete View
++Connect
++With Us
++My Thirty-One
++My Homepage
++My Parties
++My Story
++Email Me
++Giving Back
++Catalog
++Fall 2013
++Place An Order
++Personalization
++Spirit Collection
++Collegiate Spirit
++Special Offers
++Customer Specials
++Hostess Exclusives
++Become A Consultant
++Join My Team
++Host a Party
++Hostess Exclusives
++Website
++Privacy Policy
++Return Policy
++Terms of Use
++Email Subscription Center
++© 2013 Thirty-One Gifts, LLC
++3425 Morse Crossing, Columbus, OH 43219Map1-866-GIFTS31
++Visit the Direct Selling Association (DSA) website
++Thirty-One is a proud member of the Direct Selling Association and abides by their code of ethics.
++ 
+ (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./features/step_definitions/Consultant/commissions/commissions_steps.rb
+</strong><code><span class="linenum">13</span>
+<span class="linenum">14</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I should see &quot;([^&quot;]*)&quot;$</span><span class="punct">/)</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">message</span><span class="punct">|</span>
+<span class="offending"><span class="linenum">15</span>  <span class="attribute">@current_page</span><span class="punct">.</span><span class="ident">text</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">include</span> <span class="ident">message</span></span>
+<span class="linenum">16</span><span class="keyword">end</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./features/step_definitions/Consultant/commissions/commissions_steps.rb:15:in `/^I should see &quot;([^&quot;]*)&quot;$/&#39;
+features/Consultant/order/gift_certificates.feature:17:in `And I should see &quot;Outstanding Balance: $59.97&quot;&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_12'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_12' style='display: none' src='../../images/error-PaymentPage-2013-11-07 12:14:54 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="passed">Submit Gift Cert Order</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  When  I submit my order with a gift cert payment
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see my gift card as redeemed
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+	        <br /><br />
+	      </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+      Generated by PrettyFace
+    </div>
+  </body>
+</html>

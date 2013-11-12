@@ -89,6 +89,7 @@ class EventGuestListPage
 
   def delete_guest
 
+    sleep(5)
     delete
     sleep(5)
 

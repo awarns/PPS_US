@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <link href='../../stylesheets/style.css' type='text/css' rel='stylesheet' />
+    <meta charset="utf-8">
+    <title>Feature Results</title>
+  </head>
+
+  <body>
+    
+    <div style="clear: both; width=100%; background-color:#F6F6F6;">
+      <a href="../../index.html" style="color=#0071BC;">&lt; Back</a>
+    </div>
+
+    <div style="float:left; clear:both;">
+      <div class="header_logo">
+        <img src="../../images/logo.png" width="200" />
+      </div>
+      <div class="header_description" >
+          <h2 class="results">Feature Results:  Customer Retail Order</h2>
+<br />
+
+
+        <table class="run_stats">
+          <tr>
+            <td>started:</td>
+            <td>duration:</td>
+          </tr>
+          <tr>
+            <td>Thursday November 7, 2013 at 13:14:06</td>
+            <td>1m41.243s</td>
+          </tr>
+        </table>  
+          <pre class="description run_stats">Story<br/>
+As a customer
+I want to place a retail order
+On my consultants site</pre>
+      </div>
+    </div>
+
+    <div class="summary_body">
+        <table class="StatTable">
+         <tr>
+          <th>Summary</th>
+          <th>Executed</th>
+	  <th class="passed"><img src="../../images/table_passed.png" alt="passed" title="passed"> Passed</th>
+          <th class="failed"><img src="../../images/table_failed.png" alt="failed" title="failed"> Failed</th>
+          <th class="skipped"><img src="../../images/table_skipped.png" alt="skipped" title="skipped"> Skipped</th>
+          <th class="undefined"><img src="../../images/table_undefined.png" alt="undefined" title="undefined"> Undefined</th>
+          <th class="pending" ><img src="../../images/table_pending.png" alt="pending" title="pending"> Pending</th>
+          <th>Average Duration</th>
+        </tr>
+
+        <tr class="summary_row_header">
+          <td>Scenarios</td>
+          <td>8</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>8 <span class="percentage">(100.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m11.968s</td>
+        </tr>
+        <tr class="summary_row_header">
+          <td>Steps</td>
+          <td>18</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>8 <span class="percentage">(44.4%)</span></td>
+          <td>10 <span class="percentage">(55.6%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m2.116s</td>
+        </tr>
+
+
+      </table>
+	</div>
+
+    <div class="feature_background">
+	    <div class="scenario_list">
+	      <br />
+	      <h2 class="scenarios">Background: </h2>
+	      <table cellspacing="0" cellpadding="7" border="0" width="100%">
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I am on my consultants replicated site
+
+		  </td>
+		</tr>
+	      </table>
+	      <br />
+	      <h2 class="scenarios">Scenarios:</h2>
+	      <br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Add Items To Cart</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I add items to my retail cart
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:3:in `/^I add items to my retail cart$/&#39;
+features/Customer/order/customer_retail_order.feature:11:in `When I add items to my retail cart&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I verify Order Totals, Product: &quot;$65.00&quot;, Tax: &quot;$5.01&quot;, Shipping : &quot;$9.20&quot;, Total: &quot;$79.21&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_33'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_33' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:14:13 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Remove Items from Cart</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I remove items from my retail cart
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:10:in `/^I remove items from my retail cart$/&#39;
+features/Customer/order/customer_retail_order.feature:15:in `When I remove items from my retail cart&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I should see &quot;Product Total: $40.00&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_34'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_34' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:14:46 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Update Quantity from Cart</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I update the quantity of an item in my retail customer cart
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:18:in `/^I update the quantity of an item in my retail customer cart$/&#39;
+features/Customer/order/customer_retail_order.feature:19:in `When I update the quantity of an item in my retail customer cart&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I should see &quot;Product Total: $105.00&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_35'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_35' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:14:55 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Update Personalization from Cart</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I update the personalization options of an item in my retail customer cart
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:27:in `/^I update the personalization options of an item in my retail customer cart$/&#39;
+features/Customer/order/customer_retail_order.feature:23:in `When I update the personalization options of an item in my retail customer cart&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I should see &quot;Product Total: $25.00&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_36'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_36' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:15:10 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Checkout with 31Gives on Order</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I submit a customer retail order with 31gives
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:37:in `/^I submit a customer retail order with 31gives$/&#39;
+features/Customer/order/customer_retail_order.feature:27:in `When I submit a customer retail order with 31gives&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I should see &quot;Outstanding Balance: $80.00&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I submit my customer order
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_37'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_37' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:15:19 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Checkout with out 31Gives on Order</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I submit a customer retail order without 31gives
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:59:in `/^I submit a customer retail order without 31gives$/&#39;
+features/Customer/order/customer_retail_order.feature:32:in `When I submit a customer retail order without 31gives&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I should see &quot;Outstanding Balance: $79.21&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I submit my customer order
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_38'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_38' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:15:28 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Delete Payment</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I delete a payment from my customer order
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:50:in `/^I delete a payment from my customer order$/&#39;
+features/Customer/order/customer_retail_order.feature:37:in `When I delete a payment from my customer order&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I should see &quot;Payments: $0.00&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_39'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_39' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:15:37 -0500.png'/>
+	        <br /><br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">ProPay Submit Bad Payment</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I submit the customer order with a bad credit card
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:id=&gt;&quot;ctl00_ctl00_MasterContentBody1_PageContent_txtSearchBox&quot;, :tag_name=&gt;&quot;input or textarea&quot;, :type=&gt;&quot;(any text type)&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Customer/order/cst_products_page.rb
+</strong><code><span class="linenum">12</span>
+<span class="linenum">13</span>
+<span class="offending"><span class="linenum">14</span>    <span class="ident">populate_page_with</span> <span class="ident">data_for</span><span class="punct">(</span><span class="symbol">:cst_add_prod</span><span class="punct">,</span> <span class="ident">data</span><span class="punct">)</span></span>
+<span class="linenum">15</span>    <span class="ident">search_button</span>
+<span class="linenum">16</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">3</span><span class="punct">)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Customer/order/cst_products_page.rb:14:in `cst_add_prod_to_order&#39;
+./features/step_definitions/Customer/order/customer_order_steps.rb:66:in `/^I submit the customer order with a bad credit card$/&#39;
+features/Customer/order/customer_retail_order.feature:41:in `When I submit the customer order with a bad credit card&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  When  I edit the bad payment and successfully submit
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_40'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_40' style='display: none' src='../../images/error-CstProductsPage-2013-11-07 13:15:46 -0500.png'/>
+	        <br /><br />
+	      </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+      Generated by PrettyFace
+    </div>
+  </body>
+</html>
