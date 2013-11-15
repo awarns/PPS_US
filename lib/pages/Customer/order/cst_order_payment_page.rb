@@ -59,6 +59,7 @@ class CstOrderPaymentPage
   def cst_submit_order
 
     submit_order
+    sleep(15)
 
   end
 

@@ -164,7 +164,6 @@ PageObject::PageFactory.routes = {
     :customer_checkout => [
         [CstOrderPaymentPage, :cst_checkout_with_credit_card],
         [CstOrderPaymentPage, :cst_submit_order],
-        [SubmittingOrderPage, :cst_verify_submission]
     ],
     :cst_party_order => [
         [ConsultantReplicatedSitePage, :click_place_an_order],
@@ -182,7 +181,6 @@ PageObject::PageFactory.routes = {
         [YourInvoicePage, :cst_pay_for_order]
     ],
     :create_order_from_event => [
-        [LoginPage, :login],
         [VirtualOfficeHomePage, :click_my_events],
         [MyEventsHomePage, :edit_existing_event],
         [EventGuestListPage, :create_the_order],

@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Thursday November 14, 2013 at 16:54:25</td>
-            <td>1m42.157s</td>
+            <td>Friday November 15, 2013 at 11:13:32</td>
+            <td>0m37.124s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>
@@ -59,17 +59,17 @@ As i will not be able to attend the consultant&#39;s party</pre>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>1m36.105s</td>
+          <td>0m21.530s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>3</td>
-          <td>2 <span class="percentage">(66.7%)</span></td>
-          <td>1 <span class="percentage">(33.3%)</span></td>
+          <td>4</td>
+          <td>2 <span class="percentage">(50.0%)</span></td>
+          <td>1 <span class="percentage">(25.0%)</span></td>
+          <td>1 <span class="percentage">(25.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m31.394s</td>
+          <td>0m4.895s</td>
         </tr>
 
 
@@ -94,13 +94,13 @@ As i will not be able to attend the consultant&#39;s party</pre>
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="failed">Checkout with 31Gives on Order - Ship to Host</th>
+		  <th colspan="2" class="failed">Verify Order as Consultant and Submit</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I submit a customer party order with ship to host order with 31gives
+		  When  I am on Her Virtual Office
 
 		  </td>
 		  </tr>
@@ -108,7 +108,7 @@ As i will not be able to attend the consultant&#39;s party</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  Then  I should see &quot;Outstanding Balance: $76.00&quot;
+		  When  I create my party order as a consultant
 
 		  </td>
 		  </tr>
@@ -116,33 +116,61 @@ As i will not be able to attend the consultant&#39;s party</pre>
 		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
-		  Then  I submit my customer order
+		  Then  I verify my party order totals,Retail:&quot;$131.50&quot;,Volume:&quot;$130.00&quot;,Subtotal:&quot;$131.50&quot;,ShipHand:&quot;$14.40&quot;,Tax:&quot;$10.10&quot;,Total:&quot;$156.00&quot;
 	<table>
 		<tr class="error">
 			<td class="message">
-				<strong><pre>Element not found in the cache - perhaps the page has changed since it was looked up (Selenium::WebDriver::Error::StaleElementReferenceError)</pre></strong>
+				<strong><pre>expected &quot;Harvey Specter (Direct Ship)   Change Information\nItem # Qty Description Pricing Price  \n3000832C0000 1 Thermal Tote - Best Buds Retail Price $18.00 Remove\nPersonalize\n  - PERF13B: Select your personalization option: Embroidery - add $7\n- PERF12B: Select your font color: Orange\n- PERF13C: Select font style: 30\n- PERF12H: Text (3 character max): EMB\n$7.00\n3244832C0000 1 About Town Blanket - Best Buds Retail Price $40.00 Remove\nPersonalize\n  - PERF13B: Select your personalization option: None\n$0.00\n31GIVESR 1 Round Up and Contribute the Change Retail Price $0.61 Remove&quot; to include &quot;$131.50&quot;, &quot;$130.00&quot;, &quot;$131.50&quot;, &quot;$14.40&quot;, &quot;$10.10&quot;, and &quot;$156.00&quot;
+Diff:
+@@ -1,7 +1,15 @@
+-$131.50
+-$130.00
+-$131.50
+-$14.40
+-$10.10
+-$156.00
++Harvey Specter (Direct Ship)   Change Information
++Item # Qty Description Pricing Price  
++3000832C0000 1 Thermal Tote - Best Buds Retail Price $18.00 Remove
++Personalize
++  - PERF13B: Select your personalization option: Embroidery - add $7
++- PERF12B: Select your font color: Orange
++- PERF13C: Select font style: 30
++- PERF12H: Text (3 character max): EMB
++$7.00
++3244832C0000 1 About Town Blanket - Best Buds Retail Price $40.00 Remove
++Personalize
++  - PERF13B: Select your personalization option: None
++$0.00
++31GIVESR 1 Round Up and Contribute the Change Retail Price $0.61 Remove
+ (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<pre class="ruby"><strong>[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131114-20841-vcy3j1/extensions/fxdriver@googlecode.com/components/command_processor.js
-</strong><code><span class="linenum">7224</span><span class="comment"># Couldn't get snippet for [remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131114-20841-vcy3j1/extensions/fxdriver@googlecode.com/components/command_processor.js</span></code></pre>
+				<pre class="ruby"><strong>./features/step_definitions/Consultant/order/party_order_steps.rb
+</strong><code><span class="linenum">27</span><span class="constant">Then</span><span class="punct">(/</span><span class="regex">^I verify my party order totals,Retail:&quot;([^&quot;]*)&quot;,Volume:&quot;([^&quot;]*)&quot;,Subtotal:&quot;([^&quot;]*)&quot;,ShipHand:&quot;([^&quot;]*)&quot;,Tax:&quot;([^&quot;]*)&quot;,Total:&quot;([^&quot;]*)&quot;$</span><span class="punct">/)</span> <span class="keyword">do</span> <span class="punct">|</span><span class="ident">retail</span><span class="punct">,</span> <span class="ident">volume</span><span class="punct">,</span> <span class="ident">subtotal</span><span class="punct">,</span> <span class="ident">shiphand</span><span class="punct">,</span> <span class="ident">tax</span><span class="punct">,</span> <span class="ident">total</span><span class="punct">|</span>
+<span class="linenum">28</span>
+<span class="offending"><span class="linenum">29</span>  <span class="ident">on</span><span class="punct">(</span><span class="constant">OrderDetailsPage</span><span class="punct">).</span><span class="ident">order_summary_text</span><span class="punct">.</span><span class="ident">should</span> <span class="ident">include</span> <span class="ident">retail</span><span class="punct">,</span> <span class="ident">volume</span><span class="punct">,</span> <span class="ident">subtotal</span><span class="punct">,</span> <span class="ident">shiphand</span><span class="punct">,</span> <span class="ident">tax</span><span class="punct">,</span> <span class="ident">total</span></span>
+<span class="linenum">30</span>
+<span class="linenum">31</span><span class="keyword">end</span></code></pre>
 			</td>
 		</tr>
 		<tr >
 			<td class="detail">
-					<pre>[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131114-20841-vcy3j1/extensions/fxdriver@googlecode.com/components/command_processor.js:7226:in `Utils.getElementAt&#39;
-[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131114-20841-vcy3j1/extensions/fxdriver@googlecode.com/components/command_processor.js:10289:in `WebElement.getElementText&#39;
-[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131114-20841-vcy3j1/extensions/fxdriver@googlecode.com/components/command_processor.js:10833:in `DelayedCommand.prototype.executeInternal_/h&#39;
-[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131114-20841-vcy3j1/extensions/fxdriver@googlecode.com/components/command_processor.js:10838:in `DelayedCommand.prototype.executeInternal_&#39;
-[remote server] file:///var/folders/k2/x_h_y1vx4_15439nxbgf0mrm0000gp/T/webdriver-profile20131114-20841-vcy3j1/extensions/fxdriver@googlecode.com/components/command_processor.js:10780:in `DelayedCommand.prototype.execute/&lt;&#39;
-(eval):1:in `process_watir_call&#39;
-./lib/pages/Consultant/order/submitting_order_page.rb:65:in `cst_verify_submission&#39;
-./features/step_definitions/Customer/order/customer_order_steps.rb:44:in `/^I submit my customer order$/&#39;
-./features/Customer/order/customer_party_order.feature:43:in `And I submit my customer order&#39;</pre>
+					<pre>./features/step_definitions/Consultant/order/party_order_steps.rb:29:in `/^I verify my party order totals,Retail:&quot;([^&quot;]*)&quot;,Volume:&quot;([^&quot;]*)&quot;,Subtotal:&quot;([^&quot;]*)&quot;,ShipHand:&quot;([^&quot;]*)&quot;,Tax:&quot;([^&quot;]*)&quot;,Total:&quot;([^&quot;]*)&quot;$/&#39;
+./features/Customer/order/customer_party_order.feature:64:in `Then I verify my party order totals,Retail:&quot;$131.50&quot;,Volume:&quot;$130.00&quot;,Subtotal:&quot;$131.50&quot;,ShipHand:&quot;$14.40&quot;,Tax:&quot;$10.10&quot;,Total:&quot;$156.00&quot;&#39;</pre>
 			</td>
 		</tr>
 	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I submit my party event order
 
 		  </td>
 		  </tr>
@@ -150,7 +178,7 @@ As i will not be able to attend the consultant&#39;s party</pre>
 	    
         <div class="img_container">
 		        <a href='' onclick="img=document.getElementById('img_0'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
-		        <img id='img_0' style='display: none' src='../../images/error-SubmittingOrderPage-2013-11-14 16:56:06 -0500.png'/>
+		        <img id='img_0' style='display: none' src='../../images/error-OrderDetailsPage-2013-11-15 11:14:07 -0500.png'/>
 	        <br /><br />
 	      </div>
       </div>

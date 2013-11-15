@@ -3,7 +3,7 @@ class SubmittingOrderPage
 
 
   div(:submit_message, :id => "div_submit_out")
-  div(:cst_submit_message, :class => "container")
+  div(:cst_submit_message, :id => "MasterContentBody1_Message")
   link(:order_history, :text => "Order Hist.")
   link(:back_to_payments, :id => "MasterContentBody1_btnBackToPayments")
   table(:order_history_table, :id => "MasterContentBody1_content_rep_data_orders")
@@ -11,6 +11,9 @@ class SubmittingOrderPage
 
 
   def verify_submission
+
+
+    sleep(10)
 
     count = 1
 
@@ -60,12 +63,12 @@ class SubmittingOrderPage
 
     while count < 4
 
-      while cst_submit_message !~ /.*Thank You.*/
+      while cst_submit_message !~ /.*Completed.*/
 
         sleep(3)
         count = count + 1
 
-        if cst_submit_message =~ /.*Thank You.*/
+        if cst_submit_message =~ /.*Completed*/
 
           count = 5
 

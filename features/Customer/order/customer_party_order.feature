@@ -23,7 +23,7 @@ Feature: Customer Party Order
 
   Scenario: Add Items to my Cart direct ship
     When I add items to my party cart for direct ship
-    Then I verify Order Totals, Product: "$65.00", Tax: "$5.19", Shipping : "$9.20", Total: "$79.30"
+    Then I verify Order Totals, Product: "$65.00", Tax: "$5.19", Shipping : "$9.20", Total: "$79.39"
 
   Scenario: Remove Items from Cart
     When I remove items from my party cart
@@ -41,11 +41,15 @@ Feature: Customer Party Order
     When I submit a customer party order with ship to host order with 31gives
     Then I should see "Outstanding Balance: $76.00"
     And I submit my customer order
+    Then I should see "Thank You"
+    And I should see "Processing Completed!"
 
   Scenario: Checkout with 31Gives on Order - Direct Ship
     When I submit a customer party order with direct ship order with 31gives
     Then I should see "Outstanding Balance: $80.00"
     And I submit my customer order
+    Then I should see "Thank You"
+    And I should see "Processing Completed!"
 
   Scenario: Delete Payment
     When I delete a payment from my party customer order
@@ -57,7 +61,7 @@ Feature: Customer Party Order
   Scenario: Verify Order as Consultant and Submit
     When I am on Her Virtual Office
     And I create my party order as a consultant
-    Then I verify my party order totals,Retail:"$130.85",Volume:"$130.00",Subtotal:"$130.85",ShipHand:"$14.40",Tax:"$9.75",Total:"$155.00"
+    Then I verify my party order totals,Retail:"$131.50",Volume:"$130.00",Subtotal:"$131.50",ShipHand:"$14.40",Tax:"$10.10",Total:"$156.00"
     And I submit my party event order
 
 
