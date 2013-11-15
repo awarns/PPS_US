@@ -27,10 +27,13 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Thursday November 7, 2013 at 13:18:41</td>
-            <td>0m0.000s</td>
+            <td>Wednesday November 13, 2013 at 13:39:28</td>
+            <td>0m7.223s</td>
           </tr>
         </table>  
+          <pre class="description run_stats">Story<br/>
+As a csr I want to
+enter a Follow Up for a consultant</pre>
       </div>
     </div>
 
@@ -49,23 +52,23 @@
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>0</td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>N m Ns</td>
+          <td>1</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>1 <span class="percentage">(100.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m1.115s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>0</td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>0 <span class="percentage">(NaN%)</span></td>
-          <td>N m Ns</td>
+          <td>2</td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>1 <span class="percentage">(50.0%)</span></td>
+          <td>1 <span class="percentage">(50.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0 <span class="percentage">(0.0%)</span></td>
+          <td>0m0.001s</td>
         </tr>
 
 
@@ -74,11 +77,73 @@
 
     <div class="feature_background">
 	    <div class="scenario_list">
+	      <br />
+	      <h2 class="scenarios">Background: </h2>
 	      <table cellspacing="0" cellpadding="7" border="0" width="100%">
+		<tr>
+		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td>
+		    Given  I am on the Employee Admin site
+
+		  </td>
+		</tr>
 	      </table>
 	      <br />
 	      <h2 class="scenarios">Scenarios:</h2>
 	      <br />
+	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
+	      <tr >
+		  <th colspan="2" class="failed">Add A follow up as a csr</th>
+		</tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="">
+   
+		  When  I add a follow up as a csr
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>Ambiguous match of &quot;I add a follow up as a csr&quot;:
+
+features/step_definitions/Employee/csr/csr_follow_up_steps.rb.rb:1:in `/^I add a follow up as a csr$/&#39;
+features/step_definitions/csr_follow_up_steps.rb.rb:1:in `/^I add a follow up as a csr$/&#39;
+
+You can run again with --guess to make Cucumber be more smart about it
+ (Cucumber::Ambiguous)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>features/Employee/csr/csr_follow_up_creation.feature
+</strong><code><span class="linenum">8</span>
+<span class="linenum">9</span>  <span class="constant">Scenario</span><span class="punct">:</span> <span class="constant">Add</span> <span class="constant">A</span> <span class="ident">follow</span> <span class="ident">up</span> <span class="ident">as</span> <span class="ident">a</span> <span class="ident">csr</span>
+<span class="offending"><span class="linenum">10</span>    <span class="constant">When</span> <span class="constant">I</span> <span class="ident">add</span> <span class="ident">a</span> <span class="ident">follow</span> <span class="ident">up</span> <span class="ident">as</span> <span class="ident">a</span> <span class="ident">csr</span></span>
+<span class="linenum">11</span>    <span class="constant">Then</span> <span class="constant">I</span> <span class="ident">should</span> <span class="ident">see</span> <span class="punct">&quot;</span><span class="string">The follow-up(s) for id #102091 has been saved.</span><span class="punct">&quot;</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>features/Employee/csr/csr_follow_up_creation.feature:10:in `When I add a follow up as a csr&#39;</pre>
+			</td>
+		</tr>
+	</table>
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
+   
+		  Then  I should see &quot;The follow-up(s) for id #102091 has been saved.&quot;
+
+		  </td>
+		  </tr>
+	      </table>
+	    
+        <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_22'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_22' style='display: none' src='../../images/error-EmployeeLoginPage-2013-11-13 13:39:34 -0500.png'/>
+	        <br /><br />
 	      </div>
       </div>
     </div>

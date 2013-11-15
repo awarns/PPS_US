@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Thursday November 7, 2013 at 13:18:41</td>
-            <td>1m59.859s</td>
+            <td>Wednesday November 13, 2013 at 13:39:35</td>
+            <td>2m1.275s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>
@@ -54,22 +54,22 @@ in the CSR manager</pre>
         <tr class="summary_row_header">
           <td>Scenarios</td>
           <td>9</td>
-          <td>9 <span class="percentage">(100.0%)</span></td>
+          <td>8 <span class="percentage">(88.9%)</span></td>
+          <td>1 <span class="percentage">(11.1%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m12.734s</td>
+          <td>0m12.827s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
           <td>20</td>
-          <td>20 <span class="percentage">(100.0%)</span></td>
+          <td>18 <span class="percentage">(90.0%)</span></td>
+          <td>1 <span class="percentage">(5.0%)</span></td>
+          <td>1 <span class="percentage">(5.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m2.946s</td>
+          <td>0m2.851s</td>
         </tr>
 
 
@@ -166,19 +166,40 @@ in the CSR manager</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">View Subscription History</th>
+		  <th colspan="2" class="failed">View Subscription History</th>
 		</tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
 		  When  I view a consultants subscription history
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:text=&gt;&quot;History&quot;, :tag_name=&gt;&quot;a&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>(eval)
+</strong><code><span class="linenum">-1</span><span class="comment"># Couldn't get snippet for (eval)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>(eval):1:in `process_watir_call&#39;
+./lib/pages/Employee/csr_manager/employee_csr_manager_page.rb:77:in `view_subscription_history&#39;
+./features/step_definitions/Employee/csr/employee_csr_manager_steps.rb:34:in `/^I view a consultants subscription history$/&#39;
+features/Employee/csr/csr_manager.feature:23:in `When I view a consultants subscription history&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  I should see &quot;Orders for Subscription&quot;
 
@@ -187,6 +208,8 @@ in the CSR manager</pre>
 	      </table>
 	    
         <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_23'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_23' style='display: none' src='../../images/error-EmployeeCsrManagerPage-2013-11-13 13:40:34 -0500.png'/>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >

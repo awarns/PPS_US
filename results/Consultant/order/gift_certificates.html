@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Thursday November 7, 2013 at 12:12:12</td>
-            <td>3m37.980s</td>
+            <td>Wednesday November 13, 2013 at 12:50:38</td>
+            <td>3m46.892s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>
@@ -54,22 +54,22 @@ and apply them towards an Order</pre>
         <tr class="summary_row_header">
           <td>Scenarios</td>
           <td>3</td>
-          <td>2 <span class="percentage">(66.7%)</span></td>
           <td>1 <span class="percentage">(33.3%)</span></td>
+          <td>2 <span class="percentage">(66.7%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>1m8.830s</td>
+          <td>1m12.437s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
           <td>7</td>
-          <td>6 <span class="percentage">(85.7%)</span></td>
+          <td>4 <span class="percentage">(57.1%)</span></td>
+          <td>2 <span class="percentage">(28.6%)</span></td>
           <td>1 <span class="percentage">(14.3%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m26.172s</td>
+          <td>0m27.180s</td>
         </tr>
 
 
@@ -94,19 +94,71 @@ and apply them towards an Order</pre>
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Order a Gift Cert</th>
+		  <th colspan="2" class="failed">Order a Gift Cert</th>
 		</tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
 		  When  I order a gift certificate
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>expected: /.*13220630
+
+Gift Certificates created:
+  -GC556778 for Andy Warns.*/
+     got: &quot;Order # Order Date Order Type Host/Customer Name Guests Volume Total Status\n13220630 11/13/2013 Retail Customer Order Andy Warns 0 $0.00 $25.00 Entered\n13194994 11/10/2013 Party Order ($200 min) Meredith Curry 9 $634.00 $810.78 Shipped - Partial\n13130537 11/8/2013 Website Order Katie Richards 0 $0.00 $14.09 Entered\n13071925 11/5/2013 Replacement Order Katie Richards 0 $0.00 $0.00 Shipped\n13053275 11/5/2013 Sales Incentive Katie Richards 0 $0.00 $0.00 Shipped\n13031107 11/3/2013 Party Order ($200 min) Katie Richards 4 $236.00 $337.39 Shipped\n13026715 11/3/2013 Business Supply Order - Fall Katie Richards 0 $0.00 $39.60 Shipped\n12951890 10/31/2013 Party Order ($200 min) LISA STEVENS 3 $338.50 $478.16 Shipped\n12997609 10/31/2013 Party Order ($200 min) Anneliese Nobles 8 $453.00 $590.74 Shipped\n12915882 10/21/2013 Sales Incentive Katie Richards 0 $0.00 $0.00 Shipped\n12900935 10/20/2013 Party Order ($200 min) April Shrader 10 $762.50 $990.54 Shipped\n12859229 10/15/2013 Monthly Special Flier Autoship Katie Richards 0 $0.00 $0.00 Shipped\n12834948 10/14/2013 Replacement Order Katie Richards 0 $0.00 $3.50 Shipped\n12833216 10/13/2013 Party Order ($200 min) Coreen Barber 5 $417.50 $584.57 Shipped\n12836084 10/12/2013 Celebrate &amp; Connect Katie Richards 0 $0.00 $0.00 Shipped\n12820620 10/11/2013 Consultant Return Katie Richards 0 $0.00 $25.00 Shipped\n12743750 10/9/2013 Website Order Katie Richards 0 $0.00 $14.09 Shipped\n17 Orders 39 $2,841.50 $3,913.46  &quot; (using =~)
+Diff:
+@@ -1,5 +1,20 @@
+-/.*13220630
+-
+-Gift Certificates created:
+-  -GC556778 for Andy Warns.*/
++Order # Order Date Order Type Host/Customer Name Guests Volume Total Status
++13220630 11/13/2013 Retail Customer Order Andy Warns 0 $0.00 $25.00 Entered
++13194994 11/10/2013 Party Order ($200 min) Meredith Curry 9 $634.00 $810.78 Shipped - Partial
++13130537 11/8/2013 Website Order Katie Richards 0 $0.00 $14.09 Entered
++13071925 11/5/2013 Replacement Order Katie Richards 0 $0.00 $0.00 Shipped
++13053275 11/5/2013 Sales Incentive Katie Richards 0 $0.00 $0.00 Shipped
++13031107 11/3/2013 Party Order ($200 min) Katie Richards 4 $236.00 $337.39 Shipped
++13026715 11/3/2013 Business Supply Order - Fall Katie Richards 0 $0.00 $39.60 Shipped
++12951890 10/31/2013 Party Order ($200 min) LISA STEVENS 3 $338.50 $478.16 Shipped
++12997609 10/31/2013 Party Order ($200 min) Anneliese Nobles 8 $453.00 $590.74 Shipped
++12915882 10/21/2013 Sales Incentive Katie Richards 0 $0.00 $0.00 Shipped
++12900935 10/20/2013 Party Order ($200 min) April Shrader 10 $762.50 $990.54 Shipped
++12859229 10/15/2013 Monthly Special Flier Autoship Katie Richards 0 $0.00 $0.00 Shipped
++12834948 10/14/2013 Replacement Order Katie Richards 0 $0.00 $3.50 Shipped
++12833216 10/13/2013 Party Order ($200 min) Coreen Barber 5 $417.50 $584.57 Shipped
++12836084 10/12/2013 Celebrate &amp; Connect Katie Richards 0 $0.00 $0.00 Shipped
++12820620 10/11/2013 Consultant Return Katie Richards 0 $0.00 $25.00 Shipped
++12743750 10/9/2013 Website Order Katie Richards 0 $0.00 $14.09 Shipped
++17 Orders 39 $2,841.50 $3,913.46  
+ (RSpec::Expectations::ExpectationNotMetError)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Consultant/order/submitting_order_page.rb
+</strong><code><span class="linenum">46</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">5</span><span class="punct">)</span>
+<span class="linenum">47</span>
+<span class="offending"><span class="linenum">48</span>    <span class="ident">order_history_table</span><span class="punct">.</span><span class="ident">should</span> <span class="punct">=~</span> <span class="punct">/</span><span class="regex">.*<span class="expr">#{@ordernumber}</span>.*</span><span class="punct">/</span></span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Consultant/order/submitting_order_page.rb:48:in `verify_submission&#39;
+./features/step_definitions/Consultant/order/gift_certificate_steps.rb:7:in `/^I order a gift certificate$/&#39;
+features/Consultant/order/gift_certificates.feature:11:in `When I order a gift certificate&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  I should see my gift card in my manage gift certificates table
 
@@ -115,6 +167,8 @@ and apply them towards an Order</pre>
 	      </table>
 	    
         <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_6'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_6' style='display: none' src='../../images/error-SubmittingOrderPage-2013-11-13 12:52:05 -0500.png'/>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
@@ -144,7 +198,7 @@ and apply them towards an Order</pre>
 	<table>
 		<tr class="error">
 			<td class="message">
-				<strong><pre>expected &quot;Andy Warns is logged in (Logout)\nHomeHelp\nProfile\nIncentives\nCo. Events\nDownline\nCommissions\nOrder\nOrder Hist.\nAcct Bal.\nMy Events\nEmail\nOur Catalog\nBack To Cart\nPayment\n  Add a new payment:\n+ Credit Card Payment\n+ Gift Certificate Payment\n\nOrder Total: $85.17\nPayments: $25.00\nOutstanding Balance: $60.17\n\nPayment Type Guest Amount      \nGift Certificate Andy Warns $25.00 Edit Delete View\nConnect\nWith Us\nMy Thirty-One\nMy Homepage\nMy Parties\nMy Story\nEmail Me\nGiving Back\nCatalog\nFall 2013\nPlace An Order\nPersonalization\nSpirit Collection\nCollegiate Spirit\nSpecial Offers\nCustomer Specials\nHostess Exclusives\nBecome A Consultant\nJoin My Team\nHost a Party\nHostess Exclusives\nWebsite\nPrivacy Policy\nReturn Policy\nTerms of Use\nEmail Subscription Center\n© 2013 Thirty-One Gifts, LLC\n3425 Morse Crossing, Columbus, OH 43219Map1-866-GIFTS31\nVisit the Direct Selling Association (DSA) website\nThirty-One is a proud member of the Direct Selling Association and abides by their code of ethics.\n &quot; to include &quot;Outstanding Balance: $59.97&quot;
+				<strong><pre>expected &quot;Andy Warns is logged in (Logout)\nHomeHelp\nProfile\nIncentives\nCo. Events\nDownline\nCommissions\nOrder\nOrder Hist.\nAcct Bal.\nMy Events\nEmail\nOur Catalog\nBack To Cart\nPayment\n  Add a new payment:\n+ Credit Card Payment\n+ Gift Certificate Payment\n\nOrder Total: $85.17\nPayments: $25.00\nOutstanding Balance: $60.17\n\nPayment Type Guest Amount      \nGift Certificate Katie Richards $25.00 Edit Delete View\nConnect\nWith Us\nMy Thirty-One\nMy Homepage\nMy Parties\nMy Story\nEmail Me\nGiving Back\nCatalog\nFall 2013\nPlace An Order\nPersonalization\nSpirit Collection\nCollegiate Spirit\nSpecial Offers\nCustomer Specials\nHostess Exclusives\nBecome A Consultant\nJoin My Team\nHost a Party\nHostess Exclusives\nWebsite\nPrivacy Policy\nReturn Policy\nTerms of Use\nEmail Subscription Center\n© 2013 Thirty-One Gifts, LLC\n3425 Morse Crossing, Columbus, OH 43219Map1-866-GIFTS31\nVisit the Direct Selling Association (DSA) website\nThirty-One is a proud member of the Direct Selling Association and abides by their code of ethics.\n &quot; to include &quot;Outstanding Balance: $59.97&quot;
 Diff:
 @@ -1,2 +1,57 @@
 -Outstanding Balance: $59.97
@@ -172,7 +226,7 @@ Diff:
 +Outstanding Balance: $60.17
 +
 +Payment Type Guest Amount      
-+Gift Certificate Andy Warns $25.00 Edit Delete View
++Gift Certificate Katie Richards $25.00 Edit Delete View
 +Connect
 +With Us
 +My Thirty-One
@@ -229,8 +283,8 @@ features/Consultant/order/gift_certificates.feature:17:in `And I should see &quo
 	      </table>
 	    
         <div class="img_container">
-		        <a href='' onclick="img=document.getElementById('img_12'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
-		        <img id='img_12' style='display: none' src='../../images/error-PaymentPage-2013-11-07 12:14:54 -0500.png'/>
+		        <a href='' onclick="img=document.getElementById('img_7'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_7' style='display: none' src='../../images/error-PaymentPage-2013-11-13 12:53:17 -0500.png'/>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >

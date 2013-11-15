@@ -7,9 +7,10 @@ Feature: Customer Party Order
   Background:
     Given I am on my consultants replicated site
 
-  Scenario: Cancel Orders
+  Scenario: Cancel Event
     When I am on Her Virtual Office
-    When I cancel my unsubmitted orders
+    When I cancel my open events
+    Then I should see "You have not created any events."
 
   Scenario: Setup Event
     When I am on Her Virtual Office
@@ -22,7 +23,7 @@ Feature: Customer Party Order
 
   Scenario: Add Items to my Cart direct ship
     When I add items to my party cart for direct ship
-    Then I verify Order Totals, Product: "$65.00", Tax: "$5.01", Shipping : "$9.20", Total: "$79.21"
+    Then I verify Order Totals, Product: "$65.00", Tax: "$5.19", Shipping : "$9.20", Total: "$79.30"
 
   Scenario: Remove Items from Cart
     When I remove items from my party cart

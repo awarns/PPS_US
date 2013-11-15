@@ -53,6 +53,9 @@ class SubmittingOrderPage
 
   def cst_verify_submission
 
+    sleep(3)
+
+
     count = 1
 
     while count < 4

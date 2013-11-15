@@ -27,8 +27,8 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Thursday November 7, 2013 at 12:06:28</td>
-            <td>4m8.325s</td>
+            <td>Wednesday November 13, 2013 at 12:45:27</td>
+            <td>3m36.769s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>
@@ -59,7 +59,7 @@ and invite guests</pre>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m29.033s</td>
+          <td>0m25.817s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
@@ -69,7 +69,7 @@ and invite guests</pre>
           <td>1 <span class="percentage">(6.2%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m7.989s</td>
+          <td>0m7.427s</td>
         </tr>
 
 
@@ -190,19 +190,41 @@ and invite guests</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Preview Invitations</th>
+		  <th colspan="2" class="failed">Preview Invitations</th>
 		</tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
 		  When  I preview an invite
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:alt=&gt;&quot;RSVP to my Party!&quot;, :tag_name=&gt;&quot;img&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>./lib/pages/Consultant/my_events/event_guest_list_page.rb
+</strong><code><span class="linenum">83</span>    <span class="ident">view_invite_link</span>
+<span class="linenum">84</span>    <span class="ident">sleep</span><span class="punct">(</span><span class="number">30</span><span class="punct">)</span>
+<span class="offending"><span class="linenum">85</span>    <span class="ident">rsvp_to_party_element</span><span class="punct">.</span><span class="ident">click</span></span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>./lib/pages/Consultant/my_events/event_guest_list_page.rb:85:in `preview_invitations&#39;
+./features/step_definitions/Consultant/my_events/party_event_steps.rb:33:in `/^I preview an invite$/&#39;
+features/Consultant/my_events/party_event.feature:27:in `When I preview an invite&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
 		  Then  I should see the invite
 
@@ -211,6 +233,8 @@ and invite guests</pre>
 	      </table>
 	    
         <div class="img_container">
+		        <a href='' onclick="img=document.getElementById('img_3'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
+		        <img id='img_3' style='display: none' src='../../images/error-EventGuestListPage-2013-11-13 12:48:03 -0500.png'/>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
@@ -238,40 +262,19 @@ and invite guests</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="failed">Delete Guest from invite</th>
+		  <th colspan="2" class="passed">Delete Guest from invite</th>
 		</tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
 		  When  I delete a guest from an invite
-	<table>
-		<tr class="error">
-			<td class="message">
-				<strong><pre>unable to locate element, using {:text=&gt;&quot;Delete&quot;, :tag_name=&gt;&quot;a&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<pre class="ruby"><strong>(eval)
-</strong><code><span class="linenum">-1</span><span class="comment"># Couldn't get snippet for (eval)</span></code></pre>
-			</td>
-		</tr>
-		<tr >
-			<td class="detail">
-					<pre>(eval):1:in `process_watir_call&#39;
-./lib/pages/Consultant/my_events/event_guest_list_page.rb:92:in `delete_guest&#39;
-./features/step_definitions/Consultant/my_events/party_event_steps.rb:50:in `/^I delete a guest from an invite$/&#39;
-features/Consultant/my_events/party_event.feature:35:in `When I delete a guest from an invite&#39;</pre>
-			</td>
-		</tr>
-	</table>
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
-		  <td class="skipped_step">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
    
 		  Then  I should see &quot;No guests have been invited to this event.&quot;
 
@@ -280,8 +283,6 @@ features/Consultant/my_events/party_event.feature:35:in `When I delete a guest f
 	      </table>
 	    
         <div class="img_container">
-		        <a href='' onclick="img=document.getElementById('img_9'); img.style.display = (img.style.display == 'none' ? 'block' : 'none');return false">Screenshot</a><br />
-		        <img id='img_9' style='display: none' src='../../images/error-EventGuestListPage-2013-11-07 12:10:14 -0500.png'/>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >

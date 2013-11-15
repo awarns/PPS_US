@@ -35,9 +35,10 @@ class OrderHistoryPage
 
   def search_using_customer(data ={})
 
-    populate_page_with data_for(:customer_search_ord_hist, data)
+    #populate_page_with data_for(:customer_search_ord_hist, data)
     select_customers
     retrieve_info
+    sleep(3)
 
   end
 

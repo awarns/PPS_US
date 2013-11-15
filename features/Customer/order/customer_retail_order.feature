@@ -11,6 +11,11 @@ Feature: Customer Retail Order
     When I am on Her Virtual Office
     When I cancel my unsubmitted orders
 
+  Scenario: Cancel Event
+    When I am on Her Virtual Office
+    When I cancel my open events
+    Then I should see "You have not created any events."
+
   Scenario: Add Items To Cart
     When I add items to my retail cart
     And I verify Order Totals, Product: "$65.00", Tax: "$5.01", Shipping : "$9.20", Total: "$79.21"

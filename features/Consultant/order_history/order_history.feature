@@ -22,6 +22,7 @@ Feature: Order History
   Scenario: Search by customer than view orders for customer
     When I search my order history by customer
     And view the customers orders
+    Then I should see "Orders"
 
 
 
