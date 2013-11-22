@@ -9,6 +9,7 @@ class CommissionsPage
 
   def view_specific_commission_period
 
+    sleep(3)
     commissions_mar_2013
 
   end

@@ -58,6 +58,7 @@ class VirtualOfficeHomePage
 
   def click_my_events
 
+    sleep(2)
     my_events
 
   end

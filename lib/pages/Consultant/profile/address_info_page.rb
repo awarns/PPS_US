@@ -61,6 +61,7 @@ class AddressInfoPage
 
   def click_additional_info
 
+    sleep(2)
     additional_info
 
   end

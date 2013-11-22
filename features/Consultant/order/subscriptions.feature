@@ -12,4 +12,4 @@ Feature: Subscriptions
 
   Scenario: Order a New Subscription
     When I order a subscription
-    Then I should not see "Thank You"
+    Then I should see "AR"

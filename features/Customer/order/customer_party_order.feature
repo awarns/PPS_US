@@ -55,9 +55,6 @@ Feature: Customer Party Order
     When I delete a payment from my party customer order
     Then I should see "Payments: $0.00"
 
-  Scenario: ProPay Submit Bad Payment
-    When I submit the customer party order with a bad credit card
-
   Scenario: Verify Order as Consultant and Submit
     When I am on Her Virtual Office
     And I create my party order as a consultant
