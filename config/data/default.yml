@@ -228,3 +228,29 @@ csr_downline:
 
 csr_order_product:
   select_pricing_level:
+
+enrollment_info_part_1:
+  enroll_f_name: 'Andy'
+  enroll_l_name: 'EnrollWarns'
+  enroll_dob: '09/24/1988'
+  enroll_ssn: ~randomize(100000000..900000000)
+  enroll_password: 'testing31'
+  enroll_confirm_password: 'testing31'
+  enroll_shipping_street: '205 N. Nelson Rd.'
+  enroll_shipping_zip: '43219'
+  enroll_email: 'andy.m.warns@gmail.com'
+
+enrollment_info_part_2:
+  enroll_confirm_email: 'andy.m.warns@gmail.com'
+  enroll_name_on_card: 'Andy Warns'
+  enroll_card_number: '41111111111111111'
+  enroll_exp_date: '1215'
+  enroll_card_security_code: '123'
+
+enrollment_commission_options:
+  bank_name: 'Wells Fargo'
+  routing_number: '314074269'
+  account_number: '1234567'
+  confirm_account_number: '1234567'
+
+

@@ -14,6 +14,7 @@ class ConsultantReplicatedSitePage
   link(:becoming_a_consultant, :text => "Becoming a Consultant")
   link(:personalization, :text => "Personalization")
 
+
   def click_place_an_order
 
     place_an_order
@@ -23,6 +24,13 @@ class ConsultantReplicatedSitePage
   def verify_personalized_website
 
     header_text.should =~ /.*Andy Warns.*/
+
+  end
+
+  def click_become_a_consultant
+
+    sleep(2)
+    becoming_a_consultant
 
   end
 

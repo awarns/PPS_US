@@ -210,6 +210,16 @@ PageObject::PageFactory.routes = {
         [SelectAnOrderOptionPage, :choose_retail_order],
         [SelectConsultantIdPage, :enter_consultant_id],
         [CsrShippingInformationPage, :csr_order_shipping_info],
+    ],
+    :join_my_team => [
+        [ConsultantReplicatedSitePage, :click_become_a_consultant],
+        [BecomingAConsultantPage, :click_join_my_team],
+        [EnrollmentOptionsPage, :click_us_enroll_kit],
+        [EnrollmentAgreementsPage, :agree_to_documents],
+        [PurchaseAdditionalItemsPage, :click_add_continue],
+        [YourInformationPage, :enter_enrollment_info],
+        [EnrollmentCommissionOptionsPage, :fill_out_commission_options],
+        [EnrollmentSummaryPage, :finalize_enrollment_setup],
     ]
 }
 
