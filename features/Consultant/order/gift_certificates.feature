@@ -14,7 +14,7 @@ Feature: Gift Certificates
   Scenario: Redeem Gift Cert
     When I redeem a gift cert on an order
     Then I should see "Payments: $25.00"
-    And I should see "Outstanding Balance: $59.97"
+    And I should see "Outstanding Balance: $60.17"
 
   Scenario: Submit Gift Cert Order
     When I submit my order with a gift cert payment

@@ -15,6 +15,6 @@ After do |scenario|
   #  embed(filename, 'image/png')
   #end
   #
-  #@browser.close
+  @browser.close
 
 end

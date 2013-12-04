@@ -164,7 +164,7 @@ PageObject::PageFactory.routes = {
     :customer_checkout => [
         [CstOrderPaymentPage, :cst_checkout_with_credit_card],
         [CstOrderPaymentPage, :cst_submit_order],
-        [SubmittingOrderPage, :cst_propay_verify]
+        [SubmittingOrderPage, :cst_verify_submission]
     ],
     :cst_party_order => [
         [ConsultantReplicatedSitePage, :click_place_an_order],

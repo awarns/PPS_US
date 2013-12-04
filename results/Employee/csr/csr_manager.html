@@ -17,7 +17,7 @@
         <img src="../../images/logo.png" width="200" />
       </div>
       <div class="header_description" >
-          <h2 class="results">Feature Results:  Retail Order as a Consultant</h2>
+          <h2 class="results">Feature Results:  CSR Manager</h2>
 <br />
 
 
@@ -27,13 +27,14 @@
             <td>duration:</td>
           </tr>
           <tr>
-            <td>Wednesday December 4, 2013 at 16:47:09</td>
-            <td>9m1.658s</td>
+            <td>Wednesday December 4, 2013 at 17:37:03</td>
+            <td>1m59.527s</td>
           </tr>
         </table>  
           <pre class="description run_stats">Story<br/>
-As a consultant
-I want to place a retail order</pre>
+As an employee
+I want to edit and view a consultants info
+in the CSR manager</pre>
       </div>
     </div>
 
@@ -52,23 +53,23 @@ I want to place a retail order</pre>
 
         <tr class="summary_row_header">
           <td>Scenarios</td>
-          <td>11</td>
-          <td>11 <span class="percentage">(100.0%)</span></td>
+          <td>9</td>
+          <td>8 <span class="percentage">(88.9%)</span></td>
+          <td>1 <span class="percentage">(11.1%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m48.282s</td>
+          <td>0m12.504s</td>
         </tr>
         <tr class="summary_row_header">
           <td>Steps</td>
-          <td>36</td>
-          <td>36 <span class="percentage">(100.0%)</span></td>
+          <td>20</td>
+          <td>18 <span class="percentage">(90.0%)</span></td>
+          <td>1 <span class="percentage">(5.0%)</span></td>
+          <td>1 <span class="percentage">(5.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
           <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0 <span class="percentage">(0.0%)</span></td>
-          <td>0m10.557s</td>
+          <td>0m2.655s</td>
         </tr>
 
 
@@ -83,7 +84,7 @@ I want to place a retail order</pre>
 		<tr>
 		  <td><img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td>
-		    Given  I am on Her Virtual Office
+		    Given  I am on the Employee Admin site
 
 		  </td>
 		</tr>
@@ -93,13 +94,21 @@ I want to place a retail order</pre>
 	      <br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Cancel Any Unsubmitted Orders</th>
+		  <th colspan="2" class="passed">Edit Profile</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I cancel my unsubmitted orders
+		  When  I edit a consultants profile
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see &quot;has been updated&quot;
 
 		  </td>
 		  </tr>
@@ -109,21 +118,42 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">SetUp Retail Order</th>
+		  <th colspan="2" class="failed">View Website</th>
 		</tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="image_tag"> <img src="../../images/failed.png" alt="failed" title="failed"></td>
 		  <td class="">
    
-		  When  I setup a retail order
+		  When  I view a consultants website
+	<table>
+		<tr class="error">
+			<td class="message">
+				<strong><pre>unable to locate element, using {:text=&gt;&quot;View Website&quot;, :tag_name=&gt;&quot;a&quot;} (Watir::Exception::UnknownObjectException)</pre></strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<pre class="ruby"><strong>(eval)
+</strong><code><span class="linenum">-1</span><span class="comment"># Couldn't get snippet for (eval)</span></code></pre>
+			</td>
+		</tr>
+		<tr >
+			<td class="detail">
+					<pre>(eval):1:in `process_watir_call&#39;
+./lib/pages/Employee/csr_manager/employee_csr_manager_page.rb:60:in `click_view_website&#39;
+./features/step_definitions/Employee/csr/employee_csr_manager_steps.rb:16:in `/^I view a consultants website$/&#39;
+./features/Employee/csr/csr_manager.feature:15:in `When I view a consultants website&#39;</pre>
+			</td>
+		</tr>
+	</table>
 
 		  </td>
 		  </tr>
 		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
+		  <td class="image_tag"> <img src="../../images/skipped.png" alt="skipped" title="skipped"></td>
+		  <td class="skipped_step">
    
-		  Then  I should see &quot;Shop Online&quot;
+		  Then  I should see &quot;YOUR CONSULTANT&quot;
 
 		  </td>
 		  </tr>
@@ -133,13 +163,13 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Add product to cart</th>
+		  <th colspan="2" class="passed">Send Email</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I continue my order
+		  When  I send an email as a CSR
 
 		  </td>
 		  </tr>
@@ -147,39 +177,7 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I Add product &quot;3000&quot; to my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I personalize using Embroidery
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I Add product &quot;3244&quot; to my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I personalize using Icon-It No Text
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I verify Order Totals, Product: &quot;$72.00&quot;, Tax: &quot;$5.72&quot;, Shipping : &quot;9.76&quot;, Total: &quot;$87.48&quot;
+		  Then  I should see &quot;Email sent successfully&quot;
 
 		  </td>
 		  </tr>
@@ -189,13 +187,13 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Remove Item From Cart</th>
+		  <th colspan="2" class="passed">View Subscription History</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I continue my order with items in my cart
+		  When  I view a consultants subscription history
 
 		  </td>
 		  </tr>
@@ -203,15 +201,7 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I Remove Item &quot;1&quot; from my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I verify Order Totals, Product: &quot;$47.00&quot;, Tax: &quot;$3.83&quot;, Shipping : &quot;$7.76&quot;, Total: &quot;$58.59&quot;
+		  Then  I should see &quot;Orders for Subscription&quot;
 
 		  </td>
 		  </tr>
@@ -221,13 +211,13 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Update Item From Cart</th>
+		  <th colspan="2" class="passed">View Commissions Details as Employee</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I continue my order with items in my cart
+		  When  I view a consultants commission details
 
 		  </td>
 		  </tr>
@@ -235,7 +225,7 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I update an item in my cart
+		  Then  I should see &quot;Click Here For Details&quot;
 
 		  </td>
 		  </tr>
@@ -243,15 +233,7 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I personalize using none
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I verify Order Totals, Product: &quot;$87.00&quot;, Tax: &quot;$6.86&quot;, Shipping : &quot;$10.96&quot;, Total: &quot;$104.82&quot;
+		  Then  I should see &quot;Rebates&quot;
 
 		  </td>
 		  </tr>
@@ -261,13 +243,13 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Add 31Gives To Order</th>
+		  <th colspan="2" class="passed">View Personal Volume Orders</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I continue my order with items in my cart
+		  When  I view a consultants personal volume via orders
 
 		  </td>
 		  </tr>
@@ -275,15 +257,7 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I Add product &quot;31givesr&quot; to my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I verify Order Totals, Product: &quot;$87.18&quot;, Tax: &quot;$6.86&quot;, Shipping : &quot;$10.96&quot;, Total: &quot;$105.00&quot;
+		  Then  I should see &quot;Orders with Personal Volume&quot;
 
 		  </td>
 		  </tr>
@@ -293,13 +267,13 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Change Shipping Information</th>
+		  <th colspan="2" class="passed">View Accounts</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I continue my order with items in my cart
+		  When  I view a consultants accounts info
 
 		  </td>
 		  </tr>
@@ -307,15 +281,7 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I change my shipping information
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I verify Order Totals, Product: &quot;$87.22&quot;, Tax: &quot;$8.82&quot;, Shipping : &quot;$10.96&quot;, Total: &quot;$107.00&quot;
+		  Then  I should see &quot;+ Add An Adjustment&quot;
 
 		  </td>
 		  </tr>
@@ -325,13 +291,13 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Remove Item Keep Gives in Cart</th>
+		  <th colspan="2" class="passed">View Order</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I continue my order with items in my cart
+		  When  I view a consultants order
 
 		  </td>
 		  </tr>
@@ -339,7 +305,7 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I Remove Item &quot;2&quot; from my cart
+		  Then  I should see &quot;Order Number&quot;
 
 		  </td>
 		  </tr>
@@ -347,7 +313,15 @@ I want to place a retail order</pre>
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  Then  I verify Order Totals, Product: &quot;$47.31&quot;, Tax: &quot;$4.93&quot;, Shipping : &quot;$7.76&quot;, Total: &quot;$60.00&quot;
+		  Then  I should see &quot;Order Date&quot;
+
+		  </td>
+		  </tr>
+		  <tr class="borderSeparator">
+		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
+		  <td class="">
+   
+		  Then  I should see &quot;Order Total&quot;
 
 		  </td>
 		  </tr>
@@ -357,109 +331,13 @@ I want to place a retail order</pre>
 	        <br /><br />
 	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
 	      <tr >
-		  <th colspan="2" class="passed">Add Item So Gives is not Last on Order</th>
+		  <th colspan="2" class="passed">Edit Order</th>
 		</tr>
 		  <tr class="borderSeparator">
 		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
 		  <td class="">
    
-		  When  I continue my order with items in my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I Add product &quot;3000&quot; to my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I personalize using none
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I verify Order Totals, Product: &quot;$65.12&quot;, Tax: &quot;$6.68&quot;, Shipping : &quot;$9.20&quot;, Total: &quot;$81.00&quot;
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
-		  <th colspan="2" class="passed">Change Personalization</th>
-		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I continue my order with items in my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I change the personalization of item &quot;2&quot;
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I personalize using Embroidery
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I verify Order Totals, Product: &quot;$72.88&quot;, Tax: &quot;$7.36&quot;, Shipping : &quot;$9.76&quot;, Total: &quot;$90.00&quot;
-
-		  </td>
-		  </tr>
-	      </table>
-	    
-        <div class="img_container">
-	        <br /><br />
-	      <table cellspacing="0" cellpadding="7" class="scenario" width="100%">
-	      <tr >
-		  <th colspan="2" class="passed">Submit Order</th>
-		</tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I continue my order with items in my cart
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  When  I Submit the Order
-
-		  </td>
-		  </tr>
-		  <tr class="borderSeparator">
-		  <td class="image_tag"> <img src="../../images/passed.png" alt="passed" title="passed"></td>
-		  <td class="">
-   
-		  Then  I should see the Order in my Order History Table
+		  When  I edit an order as a csr
 
 		  </td>
 		  </tr>
