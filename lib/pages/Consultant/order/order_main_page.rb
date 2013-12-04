@@ -85,5 +85,11 @@ class OrderMainPage
 
   end
 
+  def click_returns
+
+    returns
+
+  end
+
 
 end

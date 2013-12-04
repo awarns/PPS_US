@@ -17,8 +17,6 @@ class EmployeeLoginPage
     populate_page_with data_for(:employee_login, data)
     login
 
-
-
   end
 
 
