@@ -53,6 +53,7 @@ class OrderMainPage
 
     while order_main_page =~ /.*Cancel.*/
 
+      sleep(2)
       cancel
       @browser.alert.ok
 
@@ -81,6 +82,12 @@ class OrderMainPage
   def click_subscriptions
 
     subscriptions
+
+  end
+
+  def click_returns
+
+    returns
 
   end
 

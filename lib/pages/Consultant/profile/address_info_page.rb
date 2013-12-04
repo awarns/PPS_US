@@ -40,6 +40,7 @@ class AddressInfoPage
   def click_mailing_same_as_shipping_link
 
       mailing_shipping
+      sleep(3)
 
   end
 
@@ -60,6 +61,7 @@ class AddressInfoPage
 
   def click_additional_info
 
+    sleep(2)
     additional_info
 
   end

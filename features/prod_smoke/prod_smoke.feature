@@ -74,10 +74,6 @@ Feature: Prod Smoke Test
     And I personalize using Icon-It No Text
     Then I verify Order Totals, Product: "$72.00", Tax: "$5.72", Shipping : "9.76", Total: "$87.48"
 
-  Scenario: Submit Order
-    When I continue my order with items in my cart
-    And I Submit the Order
-    Then I should see the Order in my Order History Table
 
   Scenario: Enter Event Details for Party Event
     When I Create a Party Event

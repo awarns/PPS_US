@@ -7,9 +7,18 @@ Feature: Customer Retail Order
   Background:
     Given I am on my consultants replicated site
 
+  Scenario: Cancel Orders
+    When I am on Her Virtual Office
+    When I cancel my unsubmitted orders
+
+  Scenario: Cancel Event
+    When I am on Her Virtual Office
+    When I cancel my open events
+    Then I should see "You have not created any events."
+
   Scenario: Add Items To Cart
     When I add items to my retail cart
-    And I verify Order Totals, Product: "$65.00", Tax: "$5.01", Shipping : "$9.20", Total: "$79.21"
+    And I verify Order Totals, Product: "$65.00", Tax: "$5.19", Shipping : "$9.20", Total: "$79.39"
 
   Scenario: Remove Items from Cart
     When I remove items from my retail cart
@@ -30,7 +39,7 @@ Feature: Customer Retail Order
 
   Scenario: Checkout with out 31Gives on Order
     When I submit a customer retail order without 31gives
-    Then I should see "Outstanding Balance: $79.21"
+    Then I should see "Outstanding Balance: $79.39"
     And I submit my customer order
 
   Scenario: Delete Payment

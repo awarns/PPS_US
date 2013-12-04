@@ -46,6 +46,7 @@ class LoginPage
 
   def i_have_a_consultant_email_search(data ={})
 
+    sleep(5)
     locate_toggle_element.click
     populate_page_with data_for(:fac_email, data)
     search_by_email_address
@@ -56,17 +57,21 @@ class LoginPage
 
   def i_have_a_consultant_name_search(data ={})
 
+
+    sleep(4)
     locate_toggle_element.click
     populate_page_with data_for(:fac_her_name, data)
     search_by_name_and_location
     sleep(5)
     select_this_consultant
+    sleep(5)
 
 
   end
 
   def i_need_a_consultant_search(data ={})
 
+    sleep(4)
     search_toggle_element.click
     populate_page_with data_for(:fac_need_cns, data)
     connect_me_with_a_consultant

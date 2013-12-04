@@ -8,7 +8,7 @@ Feature: Business Supply Order
 
   Scenario: Add Items to Order
     When I add an item to a business supply order
-    Then I should see "$64.80"
+    Then I should see "$64.95"
 
   Scenario: Place Order
     When I continue my order

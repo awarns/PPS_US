@@ -7,6 +7,10 @@ Feature: Party Event
   Background:
     Given I am on Her Virtual Office
 
+  Scenario: Cancel Event
+    When I cancel my open events
+    Then I should see "You have not created any events."
+
   Scenario: Enter Event Details for Party Event
     When I Create a Party Event
     Then I should see "Invitations"

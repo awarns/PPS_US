@@ -182,7 +182,6 @@ PageObject::PageFactory.routes = {
         [YourInvoicePage, :cst_pay_for_order]
     ],
     :create_order_from_event => [
-        [LoginPage, :login],
         [VirtualOfficeHomePage, :click_my_events],
         [MyEventsHomePage, :edit_existing_event],
         [EventGuestListPage, :create_the_order],
@@ -206,6 +205,31 @@ PageObject::PageFactory.routes = {
     ],
     :csr_auto_ling => [
         [EmployeeCsrManagerPage, :search_csr_manager]
+    ],
+    :csr_retail_order => [
+        [SelectAnOrderOptionPage, :choose_retail_order],
+        [SelectConsultantIdPage, :enter_consultant_id],
+        [CsrShippingInformationPage, :csr_order_shipping_info],
+    ],
+    :join_my_team => [
+        [ConsultantReplicatedSitePage, :click_become_a_consultant],
+        [BecomingAConsultantPage, :click_join_my_team],
+        [EnrollmentOptionsPage, :click_us_enroll_kit],
+        [EnrollmentAgreementsPage, :agree_to_documents],
+        [PurchaseAdditionalItemsPage, :click_add_continue],
+        [YourInformationPage, :enter_enrollment_info],
+        [EnrollmentCommissionOptionsPage, :fill_out_commission_options],
+        [EnrollmentSummaryPage, :finalize_enrollment_setup],
+    ],
+    :process_return => [
+        [LoginPage, :nav_to_virtual_office],
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_returns],
+        [ReturnsHomePage, :create_pending_return],
+        [CreateAReturnPage, :nothing],
+        [PendingReturnPage, :begin_refund],
+        [ReturnedProductsPage, :select_card]
     ]
 }
 

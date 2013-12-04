@@ -13,7 +13,7 @@ Feature: Email Tab in PPS
 
   Scenario: Create a Branded Email
     When I create a branded email
-    Then I should see "Your email has been sent!"
+    Then I should see "This email will be sent"
 
   Scenario: Manage My Contacts
     When I manage my contacts

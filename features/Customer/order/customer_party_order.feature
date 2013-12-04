@@ -7,6 +7,11 @@ Feature: Customer Party Order
   Background:
     Given I am on my consultants replicated site
 
+  Scenario: Cancel Event
+    When I am on Her Virtual Office
+    When I cancel my open events
+    Then I should see "You have not created any events."
+
   Scenario: Setup Event
     When I am on Her Virtual Office
     When I Create a Party Event
@@ -14,11 +19,11 @@ Feature: Customer Party Order
 
   Scenario: Add Items to my Cart ship to host
     When I add items to my party cart for ship to host
-    Then I verify Order Totals, Product: "$65.00", Tax: "$4.74", Shipping : "$5.20", Total: "$74.94"
+    Then I verify Order Totals, Product: "$65.00", Tax: "$4.91", Shipping : "$5.20", Total: "$75.11"
 
   Scenario: Add Items to my Cart direct ship
     When I add items to my party cart for direct ship
-    Then I verify Order Totals, Product: "$65.00", Tax: "$5.01", Shipping : "$9.20", Total: "$79.21"
+    Then I verify Order Totals, Product: "$65.00", Tax: "$5.19", Shipping : "$9.20", Total: "$79.39"
 
   Scenario: Remove Items from Cart
     When I remove items from my party cart
@@ -34,25 +39,26 @@ Feature: Customer Party Order
 
   Scenario: Checkout with 31Gives on Order - Ship to Host
     When I submit a customer party order with ship to host order with 31gives
-    Then I should see "Outstanding Balance: $75.00"
+    Then I should see "Outstanding Balance: $76.00"
     And I submit my customer order
+    Then I should see "Thank You"
+    And I should see "Processing Completed!"
 
   Scenario: Checkout with 31Gives on Order - Direct Ship
     When I submit a customer party order with direct ship order with 31gives
     Then I should see "Outstanding Balance: $80.00"
     And I submit my customer order
+    Then I should see "Thank You"
+    And I should see "Processing Completed!"
 
   Scenario: Delete Payment
     When I delete a payment from my party customer order
     Then I should see "Payments: $0.00"
 
-  Scenario: ProPay Submit Bad Payment
-    When I submit the customer party order with a bad credit card
-
   Scenario: Verify Order as Consultant and Submit
     When I am on Her Virtual Office
     And I create my party order as a consultant
-    Then I verify my party order totals,Retail:"$130.85",Volume:"$130.00",Subtotal:"$130.85",ShipHand:"$14.40",Tax:"$9.75",Total:"$155.00"
+    Then I verify my party order totals,Retail:"$131.50",Volume:"$130.00",Subtotal:"$131.50",ShipHand:"$14.40",Tax:"$10.10",Total:"$156.00"
     And I submit my party event order
 
 

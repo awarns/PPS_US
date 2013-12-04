@@ -116,6 +116,7 @@ class AdditionalInfoPage
   def delete_card
 
     manage_cards
+    sleep(4)
     delete_card_link
 
   end

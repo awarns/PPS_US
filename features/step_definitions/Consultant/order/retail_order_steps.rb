@@ -34,7 +34,7 @@ end
 Then(/^I verify Order Totals, Product: "([^"]*)", Tax: "([^"]*)", Shipping : "([^"]*)", Total: "([^"]*)"$/) do |product, tax, shipping, total|
 
   visit YourInvoicePage
-  sleep(3)
+  sleep(5)
   @current_page.text.should include product, tax, shipping, total
 
 end

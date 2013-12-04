@@ -1,6 +1,7 @@
 class YourInvoicePage
   include PageObject
   include DataMagic
+  include FigNewton
 
 
   button(:pay_for_order_button, :value => "Pay For Order")
