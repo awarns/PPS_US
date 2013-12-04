@@ -220,6 +220,16 @@ PageObject::PageFactory.routes = {
         [YourInformationPage, :enter_enrollment_info],
         [EnrollmentCommissionOptionsPage, :fill_out_commission_options],
         [EnrollmentSummaryPage, :finalize_enrollment_setup],
+    ],
+    :process_return => [
+        [LoginPage, :nav_to_virtual_office],
+        [LoginPage, :login],
+        [VirtualOfficeHomePage, :click_order],
+        [OrderMainPage, :click_returns],
+        [ReturnsHomePage, :create_pending_return],
+        [CreateAReturnPage, :nothing],
+        [PendingReturnPage, :begin_refund],
+        [ReturnedProductsPage, :select_card]
     ]
 }
 
